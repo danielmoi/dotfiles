@@ -15,7 +15,8 @@ alias cpgitignore="cp ~/.gitignore .gitignore" # this is a symlink
 alias vimrc="vim ~/.dotfiles/.vimrc"
 alias bashp="vim ~/.dotfiles/.bash_profile"
 alias zshrc="vim ~/.dotfiles/.zshrc"
-alias bashrc="vim ~/.bashrc"
+alias bashrc="vim ~/.dotfiles/.bashrc"
+alias aliases="vim ~/.dotfiles/.aliases.public.sh"
 
 # FILES/FOLDERS - VIEW
 # 170819
@@ -27,7 +28,8 @@ alias dotfiles="cd ~/.dotfiles"
 
 # GIT
 alias gb="git branch --sort=committerdate"
-
+alias gcm="git commit"
+alias gs="git status"
 
 # TERMINAL
 alias reload=". ~/.zshrc"
