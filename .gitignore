@@ -27,3 +27,8 @@ screenshots
 
 # Logs
 logs
+
+# Security
+.env*
+.aliases.private*
+
