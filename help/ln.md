@@ -7,3 +7,7 @@ ln -si
 
 ln -si ~/.dotfiles/.vimrc ~/.vimrc
 
+Can check if that link worked
+
+In Vim, :echo $VIMRC
+If nothing appears in the bottom bar, then the link was incorrect
