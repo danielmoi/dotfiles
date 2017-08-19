@@ -3,19 +3,30 @@
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 
+
+
 # DOCKER
 alias up="docker-compose up"
+
+# FILES - COPY
+alias cpgitignore="cp ~/.gitignore .gitignore" # this is a symlink
 
 # FILES - EDIT
 alias vimrc="vim ~/.dotfiles/.vimrc"
 alias bashp="vim ~/.dotfiles/.bash_profile"
 alias zshrc="vim ~/.dotfiles/.zshrc"
+alias bashrc="vim ~/.bashrc"
 
 # FILES/FOLDERS - VIEW
 # 170819
 alias lsl="ls -la | less"
+alias lsa="ls -la"
 
 # FILES/FOLDERS - NAVIGATE
+
+# GIT
+alias gb="git branch --sort=committerdate"
+
 
 # TERMINAL
 alias reload=". ~/.zshrc"

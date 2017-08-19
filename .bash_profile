@@ -1,10 +1,5 @@
-# aliases
-alias lsa="ls -la"
-alias reload=". ./bash_profile"
+source ~/.env.sh
+source ~/.aliases.public.sh
+source ~/.aliases.private.work.sh
+source ~/.aliases.private.home.sh
 
-alias vimrc="vim ~/.vimrc"
-alias bashp="vim ~/.bash_profile"
-alias bashrc="vim ~/.bashrc"
-
-# aliases - git
-alias gb="git branch --sort=committerdate"
