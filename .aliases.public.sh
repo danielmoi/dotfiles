@@ -23,6 +23,7 @@ alias lsl="ls -la | less"
 alias lsa="ls -la"
 
 # FILES/FOLDERS - NAVIGATE
+alias dotfiles="cd ~/.dotfiles"
 
 # GIT
 alias gb="git branch --sort=committerdate"
