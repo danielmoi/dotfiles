@@ -3,6 +3,9 @@
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 
+# 170820
+alias vim="nvim"
+
 
 
 # DOCKER
