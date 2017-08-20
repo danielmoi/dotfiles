@@ -22,3 +22,5 @@ set shiftwidth=2
 " On pressing tab, insert 2 spaces (instead of tabs)
 set expandtab
 
+" 170819
+set clipboard=unnamed
