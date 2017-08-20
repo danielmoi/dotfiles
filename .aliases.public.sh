@@ -12,7 +12,12 @@ alias vim="nvim"
 alias up="docker-compose up"
 
 # FILES - COPY
+# 170820 copy file interactive
+alias cp="cp -i"
 alias cpgitignore="cp ~/.gitignore .gitignore" # this is a symlink
+
+# 170820 move file interactive
+alias mv="mv -i"
 
 # FILES - EDIT
 alias vimrc="vim ~/.dotfiles/.vimrc"
