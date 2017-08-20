@@ -1,0 +1,29 @@
+// 0 = turn OFF
+// 1 = warn
+// 2 = turn on, this will be an ERROR
+
+{
+  "env": {
+    "node": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "func-names": "off",
+    "import/no-extraneous-dependencies": [
+      "error", {
+        "devDependencies": ["**/*.test.js", "**/*_test.js", "**/*.spec.js"]
+      }
+    ],
+    "class-methods-use-this": "off",
+    "no-unused-vars": [1, { "argsIgnorePattern": "res|^err" }]
+  },
+  "globals": {
+    "describe": true,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false,
+    "expect": true
+  }
+}
