@@ -13,13 +13,6 @@ BULLETTRAIN_PROMPT_CHAR="@"
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/danielmoi/.oh-my-zsh
 
-# Source other files
-# 170819
-source ~/.env.sh
-source ~/.aliases.public.sh
-source ~/.aliases.private.work.sh
-source ~/.aliases.private.home.sh
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -68,6 +61,9 @@ ZSH_THEME="bullet-train"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+# Git aliases and functions
+# /Users/danielmoi/.oh-my-zsh/plugins/git
 plugins=(git)
 
 # User configuration
@@ -108,8 +104,15 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-export PATH="/Users/danielmoi/.splashkit/skm-darwin-x64/skm.app/Contents/MacOS:/Users/danielmoi/.rvm/gems/ruby-2.3.0/bin:/Users/danielmoi/.rvm/gems/ruby-2.3.0@global/bin:/Users/danielmoi/.rvm/rubies/ruby-2.3.0/bin:/Users/danielmoi/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/danielmoi/.rvm/bin"
+export PATH="$PATH:/Users/danielmoi/.splashkit/skm-darwin-x64/skm.app/Contents/MacOS:/Users/danielmoi/.rvm/gems/ruby-2.3.0/bin:/Users/danielmoi/.rvm/gems/ruby-2.3.0@global/bin:/Users/danielmoi/.rvm/rubies/ruby-2.3.0/bin:/Users/danielmoi/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/danielmoi/.rvm/bin"
+
+# Source other files
+# 170819
+source ~/.env.sh
+source ~/.aliases.public.sh
+source ~/.aliases.private.work.sh
+source ~/.aliases.private.home.sh
 
 # CONFIG
 # 170301
-EDITOR=code
+EDITOR=atom

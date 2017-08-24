@@ -35,8 +35,9 @@ alias lsa="ls -la"
 alias dotfiles="cd ~/.dotfiles"
 
 # GIT
+# 161126
 alias gb="git branch --sort=committerdate"
-alias gcm="git commit"
+alias gc="git commit"
 alias gs="git status"
 
 # TERMINAL
@@ -59,5 +60,3 @@ alias yl="yarn lint"
 # 170705
 alias yg="yarn go"
 alias ya="yarn assets"
-
-
