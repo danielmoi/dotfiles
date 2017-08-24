@@ -1,4 +1,9 @@
-execute pathogen#infect()
+" execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+" initialize plugin system
+call plug#end()
+
 syntax enable
 
 " Display
