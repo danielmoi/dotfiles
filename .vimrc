@@ -11,6 +11,8 @@ Plug 'altercation/vim-colors-solarized' " 170825
 Plug 'scrooloose/nerdtree' " 170824
 
 Plug 'kien/ctrlp.vim' " 170825
+Plug 'tpope/vim-fugitive' " 170825
+Plug 'itchyny/lightline.vim' " 170825 Status line
 
 " initialize plugin system
 call plug#end()
@@ -37,6 +39,10 @@ set tabstop=2
 set shiftwidth=2
 " On pressing tab, insert 2 spaces (instead of tabs)
 set expandtab
-
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 " 170819
 set clipboard=unnamed
+
+set statusline=%{fugitive#statusline()}
