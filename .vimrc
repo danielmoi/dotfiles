@@ -1,6 +1,15 @@
 " execute pathogen#infect()
 call plug#begin('~/.vim/plugged')
 
+" :PlugInstall to install plugins
+
+" This is shorthand for Plug
+" 'https://github.com/altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized' " 170825
+
+" On-demand loading 170825
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " 170824
+
 " initialize plugin system
 call plug#end()
 
