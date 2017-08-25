@@ -8,7 +8,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized' " 170825
 
 " On-demand loading 170825
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " 170824
+Plug 'scrooloose/nerdtree' " 170824
+
+Plug 'kien/ctrlp.vim' " 170825
 
 " initialize plugin system
 call plug#end()
