@@ -32,3 +32,5 @@ logs
 .env*
 .aliases.private*
 
+# DEV
+a.js
