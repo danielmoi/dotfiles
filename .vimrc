@@ -22,7 +22,7 @@ Plug 'itchyny/lightline.vim' " 170825 Status line
 "
 " 2. Completion
 Plug 'tpope/vim-surround' " 170826 Change parens, brackets, etc
-Plug 'townk/vim-autoclose' " 170826 Auto-close parens
+Plug 'raimondi/delimitmate' " 170826 Auto-close parens
 
 " 3. Code display
 "
@@ -85,4 +85,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" === DELIMITMATE ===============================
+" add a new line when pressing <CR> inside a pair of parens
+let g:delimitMate_expand_cr = 1 
 
