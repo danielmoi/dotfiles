@@ -1,7 +1,11 @@
 " execute pathogen#infect()
 call plug#begin('~/.vim/plugged')
 
+" INSTRUCTIONS
+" :w to save this file
+" :so % (or :source %) to reload
 " :PlugInstall to install plugins
+" 
 
 " This is shorthand for Plug
 " 'https://github.com/altercation/vim-colors-solarized'
