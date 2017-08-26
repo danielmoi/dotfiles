@@ -68,8 +68,15 @@ set clipboard=unnamed
 
 set statusline=%{fugitive#statusline()}
 
-" NERDTree
+" === NERDTree ==================================
+" Ctrl-n to toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" show hidden files
+let NERDTreeShowHidden=1
+
+" close vim if NERDTree is the only thing left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Navigating
 " Better split switching
@@ -77,3 +84,5 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+
