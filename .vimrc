@@ -21,7 +21,9 @@ Plug 'itchyny/lightline.vim' " 170825 Status line
 " 1. Language
 "
 " 2. Completion
-"
+Plug 'tpope/vim-surround' " 170826 Change parens, brackets, etc
+Plug 'townk/vim-autoclose' " 170826 Auto-close parens
+
 " 3. Code display
 "
 " 4. Integrations
