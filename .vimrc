@@ -79,11 +79,18 @@ let NERDTreeShowHidden=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Navigating
-" Better split switching
+" Better split switching [170825]
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" Allow navigation inside insert mode [170827]
+imap <C-h> <C-o>h
+imap <C-j> <C-o>j
+imap <C-k> <C-o>k
+imap <C-l> <C-o>l
+
 
 " === DELIMITMATE ===============================
 " add a new line when pressing <CR> inside a pair of parens
