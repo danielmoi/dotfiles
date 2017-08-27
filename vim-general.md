@@ -1,13 +1,44 @@
-" === HELP =========================
+# General vim tips
+
+-----------------------------------------------------------------------------------------
+## Syntax 
+<Key>
+<C-j> Control key, then the 'j' key
+
+{descriptor}
+the "{" indicates "this is what i'm describing inside"
+<C-{motion}> Control key, with a "motion" ("motion" is what vim uses for "direction")
+
+-----------------------------------------------------------------------------------------
+## Navigating in :help {command}
 <C-]>
 - this will go "into" the help text (when there is a hotlink)
 
+-----------------------------------------------------------------------------------------
+## vimrc
+
+### Mapping keys
+- map is the "root" of all recursive mapping commands. 
+- map, as the root form, applies to "normal", "visual+select", and "operator-pending" modes.
+- map is recursive
+
+- imap
+- map, but only in insert node
+
+### Comments
+"
+- start with " (omit the closing ")
+
 " === SETTINGS =====================
-" show current value of setting
+- this is a nice way to set comments in .vimrc
+
+
+### Settings
 :set showcmd?
+- show current value of setting
 
-" set current value to toggled  value (invert)
 :set showcmd!
+- set current value to toggled  value (invert)
 
-" set setting to off
 :set no{option}
+- set setting to off
