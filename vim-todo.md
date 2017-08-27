@@ -4,3 +4,4 @@
 - [ ] Set a <Leader> key [170827]
 - [ ] Document the syntax of keys, like <C-o> [170827]
 - [ ] Move lines up/down [170827]
+- [ ] Set up editorconfig to add newline at end of file, etc [170827]
