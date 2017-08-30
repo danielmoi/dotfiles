@@ -38,6 +38,7 @@ Plug 'raimondi/delimitmate' " 170826 Auto-close parens
 " initialize plugin system
 call plug#end()
 
+" === SETTINGS (General) =======================
 syntax enable
 
 " Display
@@ -46,9 +47,7 @@ colorscheme solarized
 
 set encoding=utf-8
 
-" 170714
-" have line numbers on
-set number
+set number " have line numbers on [170714]
 
 " 170814
 filetype plugin indent on
@@ -67,6 +66,8 @@ let g:lightline = {
 set clipboard=unnamed
 
 set statusline=%{fugitive#statusline()}
+
+" === SETTINGS (Plugins) ========================
 
 " === NERDTree ==================================
 " Ctrl-n to toggle NERDTree
