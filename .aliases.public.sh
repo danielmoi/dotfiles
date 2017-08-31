@@ -39,6 +39,7 @@ alias dotfiles="cd ~/.dotfiles"
 alias gb="git branch --sort=committerdate"
 alias gc="git commit"
 alias gs="git status"
+alias gcm="git commit -m"
 
 # TERMINAL
 alias reload=". ~/.zshrc"
