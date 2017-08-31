@@ -35,8 +35,7 @@ Plug 'raimondi/delimitmate' " 170826 Auto-close parens
 " 7. Other
 
 
-" initialize plugin system
-call plug#end()
+call plug#end() " initialize plugin system
 
 " === SETTINGS (General) =======================
 syntax enable
@@ -57,11 +56,14 @@ set tabstop=2
 
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
+
 " On pressing tab, insert 2 spaces (instead of tabs)
 set expandtab
+
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
+
 " 170819
 set clipboard=unnamed
 
@@ -96,4 +98,7 @@ imap <C-l> <C-o>l
 " === DELIMITMATE ===============================
 " add a new line when pressing <CR> inside a pair of parens
 let g:delimitMate_expand_cr = 1 
+
+" don't autoclose "" inside .vimrc
+au FileType vim let b:delimitMate_autoclose = 0
 

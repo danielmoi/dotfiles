@@ -42,3 +42,5 @@ the "{" indicates "this is what i'm describing inside"
 
 :set no{option}
 - set setting to off
+
+### Autocommand
