@@ -39,33 +39,50 @@ call plug#end() " initialize plugin system
 
 " === SETTINGS (General) =======================
 syntax enable
+set encoding=utf-8
+set clipboard=unnamed " [170819]
+" 1. Language
 
-" Display
+
+" 2. Completion
+
+
+" 3. Code display
 set background=dark
 colorscheme solarized
-
-set encoding=utf-8
-
 set number " have line numbers on [170714]
-
-" 170814
-filetype plugin indent on
-
-" show existing tab with 2 spaces width
-set tabstop=2
-
-" when indenting with '>', use 2 spaces width
-set shiftwidth=2
+set tabstop=2 " show existing tab with 2 spaces width
 
 " On pressing tab, insert 2 spaces (instead of tabs)
 set expandtab
 
+
+
+" 4. Integrations
+
+
+" 5. Interface
+
+
+" 6. Commands
+
+
+" 7. Other
+
+" Display
+
+" 170814
+filetype plugin indent on
+
+
+
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+
+
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
-
-" 170819
-set clipboard=unnamed
 
 set statusline=%{fugitive#statusline()}
 
