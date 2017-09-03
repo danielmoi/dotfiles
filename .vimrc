@@ -41,6 +41,10 @@ call plug#end() " initialize plugin system
 syntax enable
 set encoding=utf-8
 set clipboard=unnamed " [170819]
+
+" 170814
+filetype plugin indent on
+
 " 1. Language
 
 
@@ -68,25 +72,13 @@ set expandtab
 
 
 " 7. Other
-
-" Display
-
-" 170814
-filetype plugin indent on
-
-
-
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
 
 
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
-
-set statusline=%{fugitive#statusline()}
-
+" ===============================================
 " === SETTINGS (Plugins) ========================
+" ===============================================
 
 " === NERDTree ==================================
 " Ctrl-n to toggle NERDTree
@@ -119,3 +111,11 @@ let g:delimitMate_expand_cr = 1
 " don't autoclose "" inside .vimrc
 au FileType vim let b:delimitMate_autoclose = 0
 
+
+" === LIGHTLINE =================================
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
+" === FUGITIVE ==================================
+set statusline=%{fugitive#statusline()}
