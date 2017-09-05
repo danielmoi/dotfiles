@@ -14,6 +14,23 @@ the "{" indicates "this is what i'm describing inside"
 <C-]>
 - this will go "into" the help text (when there is a hotlink)
 
+
+## Useful commands
+
+```
+:help index 
+```
+Show the default keybindings
+
+```
+:map
+```
+Show all user-defined keybindings (user / plugins)
+
+```
+:nmap = show visual mode mappings
+:vmap = show visual mode mappings
+:imap = show insert mode mappings
 -----------------------------------------------------------------------------------------
 ## vimrc
 

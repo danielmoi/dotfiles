@@ -19,7 +19,8 @@ Plug 'tpope/vim-fugitive' " 170825
 Plug 'itchyny/lightline.vim' " 170825 Status line
 
 " 1. Language
-"
+Plug 'scrooloose/syntastic' " 170906 Syntax checking
+
 " 2. Completion
 Plug 'tpope/vim-surround' " 170826 Change parens, brackets, etc
 Plug 'raimondi/delimitmate' " 170826 Auto-close parens
@@ -44,6 +45,14 @@ set clipboard=unnamed " [170819]
 
 " 170814
 filetype plugin indent on
+
+" default timeoutlen is 1000
+
+
+" Insert lines without entering insert mode
+" nmap OO O<ESC>
+" nmap oo o<ESC>
+
 
 " 1. Language
 
@@ -119,3 +128,18 @@ let g:lightline = {
 
 " === FUGITIVE ==================================
 set statusline=%{fugitive#statusline()}
+
+
+" === SYNTASTIC =================================
+" Settings for Syntastic [170906]
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" Actually enable some checkers
+let g:syntastic_javascript_checkers=['eslint']
+
