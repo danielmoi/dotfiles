@@ -39,6 +39,8 @@ Plug 'raimondi/delimitmate' " 170826 Auto-close parens
 call plug#end() " initialize plugin system
 
 " === SETTINGS (General) =======================
+" Set our leader to be ,
+let mapleader = ","
 syntax enable
 set encoding=utf-8
 set clipboard=unnamed " [170819]
@@ -92,6 +94,15 @@ set shiftwidth=2
 " === NERDTree ==================================
 " Ctrl-n to toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+" Toggle NERDTreeToggle
+noremap <Leader>n :NERDTreeToggle<cr>
+
+" Focus NERDTree
+noremap <Leader>f :NERDTreeFind<cr>
+
+" Focus NERDTree
+noremap <Leader>n :NERDTreeFocus<cr>
 
 " show hidden files
 let NERDTreeShowHidden=1
