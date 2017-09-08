@@ -21,6 +21,7 @@ P = paste above
 
 :m 12 = move to exactly line 12 (if line 12 is below current line)
 :m 12 = move to line after line 12 (ie. line 13, if line 12 is above current line)
+(this explains why :m -2 works; the line is above, so we need to move one line extra)
 
 Can also do this with blocks of text (select > :m +10)
 

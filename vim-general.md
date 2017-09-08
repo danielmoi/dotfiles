@@ -31,13 +31,13 @@ Show all user-defined keybindings (user / plugins)
 :nmap = show visual mode mappings
 :vmap = show visual mode mappings
 :imap = show insert mode mappings
+```
 -----------------------------------------------------------------------------------------
-## vimrc
-
-### Mapping keys
+## Mapping keys
 - map is the "root" of all recursive mapping commands. 
 - map, as the root form, applies to "normal", "visual+select", and "operator-pending" modes.
 - map is recursive
+- "nore" means "not recursive"; "noremap" means "map, but not recursively"
 
 - imap
 - map, but only in insert node
