@@ -154,3 +154,44 @@ let g:syntastic_check_on_wq = 0
 " Actually enable some checkers
 let g:syntastic_javascript_checkers=['eslint']
 
+
+" ===============================================
+" My Mappings
+" ===============================================
+" ===============================================
+
+" /=== MOVING LINES [170909] ====================
+
+" move, in normal mode
+" :m = move
+" .+1 = current line number + 1
+" :m+1 (same as :m+) = move current line down to current line number + 1
+" == re-indents the line to suit its new position
+nnoremap <A-j> :m .+1<CR>==
+
+" move up
+" same as :m-2
+" move current line up to (current line number minus 2)
+nnoremap <A-k> :m .-2<CR>==
+
+" move, in insert mode
+" == reindents
+" g = ?
+" i = enter insert mode again
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+
+" we can move blocks of lines too, in visual mode
+" '> = a mark that identifies the selection END
+" '< = start of selection
+" gv = reselects the last visual block
+" = reindents
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" \==============================================
+
+
+
+
+
