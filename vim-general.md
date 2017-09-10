@@ -61,3 +61,23 @@ Show all user-defined keybindings (user / plugins)
 - set setting to off
 
 ### Autocommand
+
+### Variables
+[170910]
+Variables hold values for various settings / options
+
+b: buffer-variable = local to the current buffer
+w: window-variable = local to the current window
+t: tabpage-variable = local to the current tab page
+g: global-variable = global
+l: local-variable = local to a function
+s: script-variable = local to a |:source|'ed Vim script
+a: function-argument = function argument (only inside a function)
+v: vim-variable = global, pre-defined by Vim
+
+Inspect variables with :echo (not :e, which is edit)
+```
+:echo syntastic_check_on_open 
+# 1
+```
+
