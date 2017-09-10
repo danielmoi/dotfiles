@@ -1,6 +1,12 @@
 # General vim tips
 
 -----------------------------------------------------------------------------------------
+## Modes
+Normal Mode = the characters you type are commands
+Insert Mode = the characters you type are inserted as text
+
+
+-----------------------------------------------------------------------------------------
 ## Syntax 
 <Key>
 <C-j> Control key, then the 'j' key
@@ -14,8 +20,12 @@ the "{" indicates "this is what i'm describing inside"
 <C-]>
 - this will go "into" the help text (when there is a hotlink)
 
+<C-o> = go to previous help page
+
 
 ## Useful commands
+
+`:only` = make the current window the only one on the screen, all other windows are closed
 
 ```
 :help index 

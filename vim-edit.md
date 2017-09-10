@@ -1,7 +1,13 @@
-# Copy and paste
+# Editing 
 
+## Delete
+`x` = Delete, a throwback to typewriters and having to over-write an 'x' to "delete"
+
+## Visual Mode
 Enter visual mode
 Shift + V
+
+Use direction keys to modify selection
 
 Copy to global clipboard
 "+Y  
@@ -11,6 +17,13 @@ p = paste below (the "default" behaviour is next line / below)
 P = paste above
 
 (cf. o for insert on new line below, and O for insert new line above)
+
+
+## Insert line
+`o` = "open" up a new line, below
+
+
+
 -------------------------------------------------------------------------
 # Move line
 :m +1 (or :m+1, space not needed) = move line down 1 line
