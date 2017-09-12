@@ -64,6 +64,8 @@ Show all user-defined keybindings (user / plugins)
 :set showcmd?
 - show current value of setting
 
+:set showcmd  Toggle option: set, switch it on; Number/String option: show value
+
 :set showcmd!
 - set current value to toggled  value (invert)
 

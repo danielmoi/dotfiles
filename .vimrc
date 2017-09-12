@@ -191,7 +191,9 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " \==============================================
 
-
+" /=== SEARCH ===================================
+" ignore these directories
+set wildignore+=**/node_modules,**/coverage
 
 
 

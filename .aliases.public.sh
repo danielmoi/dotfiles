@@ -61,3 +61,4 @@ alias yl="yarn lint"
 # 170705
 alias yg="yarn go"
 alias ya="yarn assets"
+alias yj="yarn jest"

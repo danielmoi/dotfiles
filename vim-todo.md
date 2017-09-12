@@ -8,3 +8,8 @@
 - [x] Learn how to cut lines [170828]
 - [ ] Add new line (without entering insert mode) [170828]
 
+- [ ] Better fuzzy opener (exclude node modules, etc) [170912]
+- [ ] Create files [170912]
+- [ ] Get flow integrated [170912]
+- [ ] Get rid of trailing spaces [170912] 
+- [ ] Emmett
