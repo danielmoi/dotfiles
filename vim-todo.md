@@ -12,4 +12,9 @@
 - [ ] Create files [170912]
 - [ ] Get flow integrated [170912]
 - [ ] Get rid of trailing spaces [170912] 
-- [ ] Emmett
+- [ ] Emmett [170913]
+- [ ] Select all words and replace [170913]
+- [ ] Select and replace all across a project [170913]
+- [ ] Tab to indent etc [170913]
+- [ ] Git integratio = see what's changed (like VSCode) [170913]
+- [ ] 
