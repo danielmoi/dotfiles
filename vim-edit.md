@@ -41,11 +41,13 @@ P     paste above
 
 (cf. o for insert on new line below, and O for insert new line above)
 
-## Example
+## Example: Select 2 lines
 Shift + V   Enter visual mode
 j   Increase selection down
 "*Y   Copy to clipboad
 
+## Example: Select all
+ggVG  Go to top > Visual mode > Go to bottom
 
 -------------------------------------------------------------------------
 ## Insert line
