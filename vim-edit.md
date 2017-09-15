@@ -72,3 +72,26 @@ Can also do this with blocks of text (select > :m +10)
 [170909A] Implmented <A-j> and <A-k> as mappings for these
 
 -------------------
+
+## Search and Replace
+[170915]
+There is the :s substitute command
+
+:%s/one/two/g         Find "one" in ALL lines, and replace with "two"
+:%s/one/two/gc        Same, but ask for confirmation 
+:%s/\<one>\>/two/gc   Same, but for EXACT match
+
+:s/one/two/g          Find "one" in THIS line, and replace with "two"
+
+/-----------------------------------------------------------------------
+
+% operator
+% this is like a "file operator"
+
+:%s/hi/bye/g    % is a shortcut for 1,$ (line 1 to line end) (find and replace hi with bye in whole file)
+
+we can get help for it at :help :%
+
+It also represents "the current file name"
+
+\-----------------------------------------------------------------------
