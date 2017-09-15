@@ -1,5 +1,29 @@
 # Editing 
 
+## Nav + Edit
+A = end of line, and add cursor after 
+a = enter insert mode, AFTER current cursor position
+
+o = add new line, and enter insert mode
+<S-o> = add new line BEFORE, and enter insert mode
+
+## Moving around whilst in Insert mode
+[170827]
+- <C-o>
+- gives you one Normal command, before returning to Insert mode
+
+- <C-o>A
+- will put cursor at the end of the line (staying in edit mode)
+- this is <C-e> in MacOS
+- can also just type over the closing ) though...
+
+- <C-o>j
+- will move the cursor down to next line (staying in edit mode)
+- this is <C-n> in MacOS
+
+- we can also map <C-hjkl> to allow us to use these keys to navigate inside insert mode
+
+
 ## Visual Mode & Selecting text
 Enter visual mode
 Shift + V = select whole line
@@ -86,12 +110,32 @@ There is the :s substitute command
 /-----------------------------------------------------------------------
 
 % operator
-% this is like a "file operator"
 
+It can be a "range operator"
 :%s/hi/bye/g    % is a shortcut for 1,$ (line 1 to line end) (find and replace hi with bye in whole file)
 
 we can get help for it at :help :%
 
-It also represents "the current file name"
+It can also be a "file operator"
+Here, it represents "the current file name"
+
+:%s/\<<C-r><C-w>\>
+/         Search forward for the [count]'th occurrence of the {pattern} exclusive
+\<  \>    Ensures that the whole word is matched
+<C-r>     Insert content of any register at the cursor (whilst staying in Insert mode)
+          The next character is the name of the register (will be prompted with a "=")
+<C-w>     Following <C-r> will insert the word under the cursor
+
+
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+nnoremap  Non-recursive mapping in Normal mode
+<Leader>s   The key combination <Leader> and "s"
 
 \-----------------------------------------------------------------------
+
+## Replace (Change inner word)
+[170915]
+ciw     change inner word = removes current word, and enters Insert mode 
+
+
+
