@@ -5,58 +5,117 @@
 Vim stands for Vi IMproved
 It's written as a proper noun
 
+-----------------------------------------------------------------------
 ## Quit
 :q    Quit
 :q!   Force quit (no saving)
+:w    Write (save)
 :wq   Write Quit (Save and Quit)
 
+-----------------------------------------------------------------------
 ## Motion
-h     left
-j     down
-k     up
-l     right
+h         left
+j         down
+k         up
+l         right
 
+CTRL-F    Forward 1 page
+CTRL-B    Back 1 page
+zz        Scroll the current cursor position to the middle of the page
 
+gg        Go to top of page
+G         Go to bottom of page
+
+w         Forward, start of next
+e         Forward, End of next word
+b         Back, start of previous word
+
+0         First character of line
+^         First non-blank character of line
+I         First character of line, and enter insert mode
+
+$         End of line
+A         End of line, and enter insert mode (Append text at end of line)
+
+-----------------------------------------------------------------------
 ## Modes
-Normal Mode = the characters you type are commands
-Insert Mode = the characters you type are inserted as text
+Normal Mode         the characters you type are commands
+Insert Mode         the characters you type are inserted as text
+Visual mode         motion commands extend the highlighted selection
+Command line mode   enter characters into the command line at the bottom of the window
 
+-----------------------------------------------------------------------
+## Options
+Options are the internal variables and switches in Vim which can be set to
+achieve special effects.
 
-### Settings
-:set showcmd?     show current value of setting
+:set              Show all options that differ from their default value
+:set showcmd?     show current value of option
 :set showcmd      Toggle option: set, switch it on; Number/String option: show value
-:set showcmd!     set current value to toggled  value (invert)
-:set no{option}   set setting to off
+:set showcmd!     set current value to toggled value (invert)
+:set no{option}   set option to off
+:set {option}&    Set option to default value
+
+:set pokemon?       E518: Unknown option: pokemon
 
 
-### Variables
+-----------------------------------------------------------------------
+## Variables
 [170910]
 Variables hold values for various settings / options
 
+:let {var}={value}    Create internal variable
+:unlet {var}          Remove internal variable
+
+g: global-variable    global
 b: buffer-variable    local to the current buffer
 w: window-variable    local to the current window
 t: tabpage-variable   local to the current tab page
-g: global-variable    global
 l: local-variable     local to a function
 s: script-variable    local to a |:source|'ed Vim script
 a: function-argument  function argument (only inside a function)
 v: vim-variable       global, pre-defined by Vim
 
+Note:
+If the namespace is not specified, then the global namespace is used
 Inspect variables with :echo (not :e, which is edit)
 
+Examples:
+:let pokemon=1000     Create global variable pokemon, and assign it the value 1000
+:echo pokemon         1000
+:echo g:pokemon       1000
+:echo w:pokemon       E121: Undefined variable: w:pokemon
+                      E15: Invalid expression: w:pokemon
+
+:let w:pokemon=2      Create a variable pokemon, local to the current window
+:echo pokemon         1000 (the global variable)
+:echo w:pokemon       2 (the window variable)
+
 :echo syntastic_check_on_open       #1 will print out (it is on)
+:echo g:delimitMate_expand_cr       same as :ec delimitMate_expand_cr
+:echo g:de <Tab>                    can also do tab completion with this
 
-## Useful commands
-:map          Show all user-defined keybindings (user / plugins)
+-----------------------------------------------------------------------
+## Key mapping
+map           The "root" of all recursive mapping commands.
+              As the root form, applies to "normal", "visual+select", and "operator-pending" modes.
+              map is recursive
 
+"nore"        means "not recursive"; "noremap" means "map, but not recursively"
+
+imap          map, but only in insert node
+
+:map          Show all user-defined key mappings (user / plugins)
 :nmap         show visual mode mappings
 :vmap         show visual mode mappings
 :imap         show insert mode mappings
 
------------------------------------------------------------------------
-## .vimrc
+:map {lhs} {rhs}    Map the lhs key combination to the rhs key combination
 
-### Comments (.vimrc)
+
+
+-----------------------------------------------------------------------
+## Comments (.vimrc)
 " Comments start with " (omit the closing ")
 
 " === SETTINGS =====================
@@ -67,14 +126,3 @@ Inspect variables with :echo (not :e, which is edit)
 " Another way to use comments
 "
 "\===================
-
-## Mapping keys
-
-map       The "root" of all recursive mapping commands. 
-          As the root form, applies to "normal", "visual+select", and "operator-pending" modes.
-          map is recursive
-
-"nore"    means "not recursive"; "noremap" means "map, but not recursively"
-
-imap      map, but only in insert node
-
