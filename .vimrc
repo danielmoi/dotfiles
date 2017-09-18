@@ -135,8 +135,14 @@ au FileType vim let b:delimitMate_autoclose = 0
 " === LIGHTLINE =================================
 let g:lightline = {
       \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
       \ }
-
 " === FUGITIVE ==================================
 set statusline=%{fugitive#statusline()}
 
