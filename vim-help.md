@@ -34,7 +34,8 @@ c_<C-r>   CTRL+C when inside command line mode
 ## Navigating in :help {command}
 <C-]>         Go "into" the help text (when there is a hotlink)
 
-<C-o>         Go to previous help page
+<C-t>         Go to previous help page (previous entry in Tag stack)
+<C-o>         Go to previous help page (Older cursor position)
 
 ## Useful help commands
 :help           Enter help
