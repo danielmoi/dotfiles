@@ -56,13 +56,16 @@ achieve special effects.
 :set no{option}   set option to off
 :set {option}&    Set option to default value
 
-:set pokemon?       E518: Unknown option: pokemon
+:set pokemon?     E518: Unknown option: pokemon
+                  "pokemon" is not a vim option
 
+:set number=30    E474: Invalid argument: number=yes
+                  "30" is not a valid value for the option "number"
 
 -----------------------------------------------------------------------
 ## Variables
 [170910]
-Variables hold values for various settings / options
+Variables hold values for various settings / options. They are used by the user and plugins.
 
 :let {var}={value}    Create internal variable
 :unlet {var}          Remove internal variable
@@ -87,9 +90,9 @@ Examples:
 :echo w:pokemon       E121: Undefined variable: w:pokemon
                       E15: Invalid expression: w:pokemon
 
-:let w:pokemon=2      Create a variable pokemon, local to the current window
-:echo pokemon         1000 (the global variable)
-:echo w:pokemon       2 (the window variable)
+:let w:lemmings=2      Create a variable "lemmings", local to the current window
+:echo lemmings         1000 (the global variable)
+:echo w:lemmings       2 (the window variable)
 
 :echo syntastic_check_on_open       #1 will print out (it is on)
 :echo g:delimitMate_expand_cr       same as :ec delimitMate_expand_cr
@@ -126,3 +129,11 @@ imap          map, but only in insert node
 " Another way to use comments
 "
 "\===================
+
+
+-----------------------------------------------------------------------
+## Command line
+n q:      Open command line window [170918]
+          (whilst in Normal mode) Open a history of commands. Can edit these too!
+          Quit :q
+          Search /
