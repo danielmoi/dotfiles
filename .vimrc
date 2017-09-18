@@ -191,9 +191,30 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " \==============================================
 
+
+
+
 " /=== SEARCH ===================================
 " ignore these directories
 set wildignore+=**/node_modules,**/coverage
+
+" Search and replace [170918]
+:nnoremap <Leader>s :%s /\<<C-r><C-w>\>//g<Left><Left>
+" Find all occurrences of the word under the cursor, and replace it with the
+" typed word 
+"
+" :s          Substitute
+" :%s         Substitute in entire file (% is the same as 1,$)
+" :\<         Matches the beginning of a word
+" :\>         Matches the end of a word
+" :\< \>      Matches the exact word inside
+" <C-r><C-w>  Copies the word under the cursor into the command line
+"             CTRL-R = Insert the contents of a register named...
+"             CTRL-W = this is our 'register' we are inserting from
+" / /         Our search pattern is inside this
+" /           The character '/', after which we pass our substitute options
+" g           Our global option (replace all occcurences)
+" gc          This option would replace all occurrences, but ask confirmation
 
 
 
