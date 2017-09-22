@@ -7,6 +7,9 @@ a     enter insert mode, AFTER current cursor position
 o     add new line, and enter insert mode
 O     add new line BEFORE, and enter insert mode
 
+ea    End of word, insert cursor after
+
+
 ## Moving around whilst in Insert mode
 <C-o>     gives you one Normal command, before returning to Insert mode [170927]
 

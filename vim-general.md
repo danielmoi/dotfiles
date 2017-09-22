@@ -50,6 +50,7 @@ zz        Scroll the current cursor position to the middle of the page
 
 gg        Go to top of page
 G         Go to bottom of page
+7G        Go to line 7
 
 w         Forward, start of next
 e         Forward, End of next word
