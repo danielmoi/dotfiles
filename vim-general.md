@@ -12,6 +12,31 @@ It's written as a proper noun
 :w    Write (save)
 :wq   Write Quit (Save and Quit)
 
+:lclose   Close the "location list" for the current window
+          The lint errors window for Syntastic is a location list
+          The location list is a window-local variant of the Quickfix List
+
+-----------------------------------------------------------------------
+## Terms
+Buffer    An in-memory representation of a document
+          May not correspond to that file "on disk"
+          A buffer is a file loaded into memory for editing
+          The original file remains unchanged until you write the buffer to the file
+
+Window    A viewport on a buffer
+          One buffer can have many many windows
+          When we do :q, we are actually quitting the current WINDOW
+
+
+Tab Page  A collection of windows
+
+Tab       Another tab in the terminal.
+
+Buffer States
+1. Active     :buffers shows 'a'
+2. Hidden     :buffers shows 'h'
+3. Inactive   :buffers shows ' '
+
 -----------------------------------------------------------------------
 ## Motion
 h         left
