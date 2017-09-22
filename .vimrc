@@ -63,14 +63,19 @@ filetype plugin indent on
 
 
 " 3. Code display
-set background=dark
+set background=dark " Use colors that will look good on a dark background
+
 colorscheme solarized
+
 set number " have line numbers on [170714]
+
 set tabstop=2 " show existing tab with 2 spaces width
 
-" On pressing tab, insert 2 spaces (instead of tabs)
+" On pressing tab, insert 2 spaces (instead of inserting tab characters)
 set expandtab
 
+" when indenting (using '>'), use 2 spaces 
+set shiftwidth=2
 
 
 " 4. Integrations
@@ -83,8 +88,6 @@ set expandtab
 
 
 " 7. Other
-" when indenting with '>', use 2 spaces width
-set shiftwidth=2
 
 
 " ===============================================

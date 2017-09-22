@@ -1,41 +1,45 @@
 # Editing 
 
 ## Nav + Edit
-A = end of line, and add cursor after 
-a = enter insert mode, AFTER current cursor position
+A     end of line, and add cursor after 
+a     enter insert mode, AFTER current cursor position
 
-o = add new line, and enter insert mode
-<S-o> = add new line BEFORE, and enter insert mode
+o     add new line, and enter insert mode
+O     add new line BEFORE, and enter insert mode
 
 ## Moving around whilst in Insert mode
-[170827]
-- <C-o>
-- gives you one Normal command, before returning to Insert mode
+<C-o>     gives you one Normal command, before returning to Insert mode [170927]
 
-- <C-o>A
-- will put cursor at the end of the line (staying in edit mode)
-- this is <C-e> in MacOS
-- can also just type over the closing ) though...
+<C-o>A    will put cursor at the end of the line (staying in edit mode)
+          this is <C-e> in MacOS
+          can also just type over the closing ) though...
 
-- <C-o>j
-- will move the cursor down to next line (staying in edit mode)
-- this is <C-n> in MacOS
+<C-o>j    will move the cursor down to next line (staying in edit mode)
+          this is <C-n> in MacOS
 
-- we can also map <C-hjkl> to allow us to use these keys to navigate inside insert mode
+we can also map <C-hjkl> to allow us to use these keys to navigate inside insert mode
 
 
 ## Visual Mode & Selecting text
 Enter visual mode
-Shift + V = select whole line
-v = select character (and then direction keys)
-
 Use direction keys to modify selection
 
+V       select whole line (then motion keys)
+v       select character (and then motion keys)
+
+
 -------------------------------------------------------------------------
-## Copy
-yy or Y = yank current line, including the newline character at the end of the line [170828]
-y$ = yank from here, to end of line, but not newline character at the end
-= go to start of line, copy to end, exclude newline
+## Yank (Copy)
+y           yank 1 character
+y3l         yank 3 characters to the right
+[x]y        yank n characters
+["x]y       into 
+
+y$          yank from here, to end of line, but not newline character at the end
+go to start of line, copy to end, exclude newline
+
+yy or Y     yank current line, including the newline character at the end of the line [170828]
+
 
 
 "*
@@ -51,12 +55,12 @@ We can also do visual select
 <S-v>, and then navigate using keys to select text, and then YANK
 
 
-## Cut / Delete
+## Delete (Cut)
 D = cut current line, from this character, to the end
 dd = cut current line, including the newline character at the end of the line [170828]
 
 x = Delete, a throwback to typewriters and having to over-write an 'x' to "delete"
-
+r           Replace single character (returns back to Normal mode)
 
 # Paste
 p     paste below (the "default" behaviour is next line / below)
