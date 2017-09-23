@@ -26,7 +26,8 @@ Plug 'tpope/vim-surround' " 170826 Change parens, brackets, etc
 Plug 'raimondi/delimitmate' " 170826 Auto-close parens
 
 " 3. Code display
-"
+Plug 'nathanaelkane/vim-indent-guides' " Creates indent lines [170924]
+
 " 4. Integrations
 "
 " 5. Interface
@@ -163,6 +164,20 @@ let g:syntastic_check_on_wq = 0
 " Actually enable some checkers
 let g:syntastic_javascript_checkers=['eslint']
 
+"------------------------------------------------------------------------------
+" Indent Lines Plugin
+"------------------------------------------------------------------------------
+ 
+let g:indent_guides_enable_on_vim_startup = 0 " Can toggle with <Leader>ig
+" let g:indent_guides_auto_colors = 0
+" let g:indent_guides_exclude_filetypes =['help', 'nerdtree']
+
+" let g:indent_guides_guide_size = 1
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=235
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
+" autocmd VimEnter,Colorscheme * :IndentGuidesEnable
+
+"------------------------------------------------------------------------------
 
 " ===============================================
 " My Mappings
