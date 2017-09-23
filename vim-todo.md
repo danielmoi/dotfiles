@@ -19,3 +19,5 @@
 - [ ] Git integration = see what's changed (like VSCode) [170913]
 - [ ] Fix opening panes mess > replace pane / tile (as it is doing now) [170917]
 - [ ] Multiple cursors [170918]
+- [ ] Use fzf instead of CtrlP [170924]
+- [ ] Integrate rg with fzf [170924]
