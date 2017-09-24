@@ -27,6 +27,7 @@ Plug 'raimondi/delimitmate' " 170826 Auto-close parens
 
 " 3. Code display
 Plug 'nathanaelkane/vim-indent-guides' " Creates indent lines [170924]
+Plug 'flazz/vim-colorschemes' " Color schemes [170924]
 
 " 4. Integrations
 "
