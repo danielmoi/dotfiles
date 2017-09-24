@@ -72,6 +72,7 @@ highlight NonText guifg=#4a4a59 ctermfg=234
 highlight SpecialKey guifg=#4a4a59
 
 
+set list
 set listchars=space:.,eol:¬ " display invisible characters [170924]
 
 set number " have line numbers on [170714]
