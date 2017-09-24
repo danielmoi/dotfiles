@@ -68,6 +68,11 @@ filetype plugin indent on
 set background=dark " Use colors that will look good on a dark background
 
 colorscheme solarized
+highlight NonText guifg=#4a4a59 ctermfg=234
+highlight SpecialKey guifg=#4a4a59
+
+
+set listchars=space:.,eol:¬ " display invisible characters [170924]
 
 set number " have line numbers on [170714]
 
@@ -241,5 +246,7 @@ set wildignore+=**/node_modules,**/coverage
 " g           Our global option (replace all occcurences)
 " gc          This option would replace all occurrences, but ask confirmation
 
+" /=== INVISIBLE CHARACTERS ---------------------------------------
+nmap <Leader>l :set list!<CR> " Toggle showing invisible characters
 
-
+nnoremap <Leader>hl :set hlsearch!<CR>
