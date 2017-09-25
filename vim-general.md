@@ -75,6 +75,9 @@ Command line mode   enter characters into the command line at the bottom of the 
 Options are the internal variables and switches in Vim which can be set to
 achieve special effects.
 
+We change options with the keyword SET.
+We inspect options by appending "?"
+
 :set              Show all options that differ from their default value
 :set showcmd?     show current value of option
 :set showcmd      Toggle option: set, switch it on; Number/String option: show value
@@ -89,9 +92,27 @@ achieve special effects.
                   "30" is not a valid value for the option "number"
 
 -----------------------------------------------------------------------
+## Environment Variables
+[170926]
+
+$HOME         Full path to home directory
+
+$VIM          Full path to where Vim is installed
+
+$MYVIMRC      Full path to .vimrc file (if .vimrc exists)
+              Empty is no .vimrc
+
+$TERM         Type of terminal
+              xterm-256color
+              xterm (probably limited to 8 colors)
+
+-----------------------------------------------------------------------
 ## Variables
 [170910]
 Variables hold values for various settings / options. They are used by the user and plugins.
+
+We change variables with the keyword LET.
+We inspect variables with :echo
 
 :let {var}={value}    Create internal variable
 :unlet {var}          Remove internal variable

@@ -5,10 +5,11 @@ call plug#begin('~/.vim/plugged')
 " :w to save this file
 " :so % (or :source %) to reload
 " :PlugInstall to install plugins
-" 
+"
 
 " This is shorthand for Plug
 " 'https://github.com/altercation/vim-colors-solarized'
+
 Plug 'altercation/vim-colors-solarized' " 170825
 
 " On-demand loading 170825
@@ -68,7 +69,7 @@ filetype plugin indent on
 set background=dark " Use colors that will look good on a dark background
 
 colorscheme solarized
-highlight NonText guifg=#4a4a59 ctermfg=234
+highlight NonText guifg=#4a4a59 ctermfg=238
 highlight SpecialKey guifg=#4a4a59
 
 
@@ -84,7 +85,7 @@ set tabstop=2 " show existing tab with 2 spaces width
 " On pressing tab, insert 2 spaces (instead of inserting tab characters)
 set expandtab
 
-" when indenting (using '>'), use 2 spaces 
+" when indenting (using '>'), use 2 spaces
 set shiftwidth=2
 
 
@@ -139,7 +140,7 @@ imap <C-l> <C-o>l
 
 " === DELIMITMATE ===============================
 " add a new line when pressing <CR> inside a pair of parens
-let g:delimitMate_expand_cr = 1 
+let g:delimitMate_expand_cr = 1
 
 " don't autoclose "" inside .vimrc
 au FileType vim let b:delimitMate_autoclose = 0
@@ -176,7 +177,7 @@ let g:syntastic_javascript_checkers=['eslint']
 "------------------------------------------------------------------------------
 " Indent Lines Plugin
 "------------------------------------------------------------------------------
- 
+
 let g:indent_guides_enable_on_vim_startup = 0 " Can toggle with <Leader>ig
 " let g:indent_guides_auto_colors = 0
 " let g:indent_guides_exclude_filetypes =['help', 'nerdtree']
@@ -234,7 +235,7 @@ set wildignore+=**/node_modules,**/coverage
 " Search and replace [170918]
 :nnoremap <Leader>s :%s /\<<C-r><C-w>\>//g<Left><Left>
 " Find all occurrences of the word under the cursor, and replace it with the
-" typed word 
+" typed word
 "
 " :s          Substitute
 " :%s         Substitute in entire file (% is the same as 1,$)
