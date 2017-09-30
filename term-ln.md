@@ -30,3 +30,5 @@ ln -si ~/.dotfiles/.env.sh ~/.env.sh
 ln -si ~/.dotfiles/.aliases.public.sh ~/.aliases.public.sh
 
 ```
+## Remove Symlink
+rm .vimrc

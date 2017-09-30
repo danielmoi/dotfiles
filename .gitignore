@@ -19,6 +19,7 @@ Resources
 *.pdf
 *.doc*
 *.zip
+*.png
 
 # Screenshots
 _screenshots
