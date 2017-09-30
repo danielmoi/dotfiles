@@ -42,21 +42,11 @@ Plug 'flazz/vim-colorschemes' " Color schemes [170924]
 call plug#end() " initialize plugin system
 
 " === SETTINGS (General) =======================
-" Set our leader to be ,
-let mapleader = ","
-syntax enable
-set encoding=utf-8
+let mapleader = "," " Use the comma key as the leader
+set encoding=utf-8 " Use UTF-8 character encoding in display
 set clipboard=unnamed " [170819]
 
-" 170814
-filetype plugin indent on
-
-" default timeoutlen is 1000
-
-
-" Insert lines without entering insert mode
-" nmap OO O<ESC>
-" nmap oo o<ESC>
+filetype plugin indent on " filetype detection on, plugin on, indent on [170814]
 
 
 " 1. Language
@@ -66,10 +56,11 @@ filetype plugin indent on
 
 
 " 3. Code display
+syntax enable " Turn on syntax highlighting
 set background=dark " Use colors that will look good on a dark background
 
-colorscheme solarized
-highlight NonText guifg=#4a4a59 ctermfg=238
+colorscheme solarized " Use solarized colorscheme (with background option, solarized-dark))
+highlight NonText guifg=#4a4a59 ctermfg=238 " Dim invisible space characters
 highlight SpecialKey guifg=#4a4a59
 
 
