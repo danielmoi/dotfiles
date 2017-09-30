@@ -73,7 +73,7 @@ highlight NonText guifg=#4a4a59 ctermfg=238
 highlight SpecialKey guifg=#4a4a59
 
 
-set list
+set list " list mode, same as :print, but display unprintable characters, changed further with 'listchars'
 set listchars=space:.,eol:¬,trail:.,tab:>. " display invisible characters [170924]
 autocmd FileType qf setlocal nolist " hide invisibles in quickfix/location lists [170924]
 autocmd FileType nerdtree setlocal nolist " hide invisibles in NERDtree [170924]
@@ -88,6 +88,8 @@ set expandtab
 " when indenting (using '>'), use 2 spaces
 set shiftwidth=2
 
+set textwidth=80 " limit screen width to 80 characters [170930]
+set colorcolumn=+1 "highlight column after 'textwidth' [170930]
 
 " 4. Integrations
 
