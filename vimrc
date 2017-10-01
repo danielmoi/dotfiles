@@ -81,6 +81,8 @@ set expandtab
 set shiftwidth=2
 
 set textwidth=80 " limit screen width to 80 characters [170930]
+                  " Will actually create new line automaticaly (adds EOL)
+
 set colorcolumn=+1 "highlight column after 'textwidth' [170930]
 
 " 4. Integrations
