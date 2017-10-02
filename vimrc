@@ -52,6 +52,8 @@ filetype plugin indent on " filetype detection on, plugin on, indent on [170814]
 
 " 1. Language
 
+" mapping for digraphs (C-K is remapped below for motion in insert)
+inoremap <C-D> <C-K>
 
 " 2. Completion
 
