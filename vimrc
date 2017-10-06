@@ -87,6 +87,9 @@ set textwidth=80 " limit screen width to 80 characters [170930]
 
 set colorcolumn=+1 "highlight column after 'textwidth' [170930]
 
+let b:delimitMate_nesting_quotes = ['`']
+
+
 " 4. Integrations
 
 

@@ -22,4 +22,5 @@ Instead of this:
 curl https://raw.githubusercontent.com/danielmoi/dotfiles/master/.aliases.public.sh > .aliases.public.sh
 
 Do this:
+- writes output to a file
 curl -JLO https://raw.githubusercontent.com/danielmoi/dotfiles/master/.aliases.public.sh
