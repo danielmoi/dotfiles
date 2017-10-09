@@ -47,6 +47,7 @@ l         right
 CTRL-F    Forward 1 page
 CTRL-B    Back 1 page
 zz        Scroll the current cursor position to the middle of the page
+z<CR>     Scroll the current cursor to the top
 
 gg        Go to top of page
 G         Go to bottom of page
