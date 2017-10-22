@@ -11,6 +11,9 @@ include
 # C++ (me)
 Go
 
+# Rust
+target
+
 # -- Environments --------------
 # Node
 node_modules
