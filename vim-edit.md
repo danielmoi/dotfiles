@@ -1,7 +1,7 @@
-# Editing 
+# Editing
 
 ## Nav + Edit
-A     end of line, and add cursor after 
+A     end of line, and add cursor after
 a     enter insert mode, AFTER current cursor position
 
 o     add new line, and enter insert mode
@@ -36,7 +36,7 @@ v       select character (and then motion keys)
 y           yank 1 character
 y3l         yank 3 characters to the right
 [x]y        yank n characters
-["x]y       into 
+["x]y       into
 
 y$          yank from here, to end of line, but not newline character at the end
 go to start of line, copy to end, exclude newline
@@ -54,7 +54,7 @@ yiw = yank word, inside (no surrounding whitespace) [170828]
 yiw = yank word, around (no surrounding whitespace) [170828]
 
 
-We can also do visual select 
+We can also do visual select
 <S-v>, and then navigate using keys to select text, and then YANK
 
 
@@ -109,7 +109,7 @@ Can also do this with blocks of text (select > :m +10)
 There is the :s substitute command
 
 :%s/one/two/g         Find "one" in ALL lines, and replace with "two"
-:%s/one/two/gc        Same, but ask for confirmation 
+:%s/one/two/gc        Same, but ask for confirmation
 :%s/\<one>\>/two/gc   Same, but for EXACT match
 
 :s/one/two/g          Find "one" in THIS line, and replace with "two"
@@ -142,7 +142,23 @@ nnoremap  Non-recursive mapping in Normal mode
 
 ## Replace (Change inner word)
 [170915]
-ciw     change inner word = removes current word, and enters Insert mode 
+ciw     change inner word = removes current word, and enters Insert mode
 
 
+## Change case
+[171022]
+~   Toggle case
+U   Uppercase
+u   Lowercase
 
+Visual select, then ~/U/u
+
+gUU   Change current line to uppercase
+guu   Change current line to lowercase
+
+Toggle case of...
+~     character under cursor
+3~    next three characters
+g~3w  next three words
+g~iw  current word (cursor can be anywhere in word)
+g~$   all characters, from cursor, to end to line
