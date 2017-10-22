@@ -21,6 +21,7 @@ Plug 'itchyny/lightline.vim' " 170825 Status line
 
 " 1. Language
 Plug 'scrooloose/syntastic' " 170906 Syntax checking
+Plug 'rust-lang/rust.vim' " 171022 Rust
 
 " 2. Completion
 Plug 'tpope/vim-surround' " 170826 Change parens, brackets, etc
