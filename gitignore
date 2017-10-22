@@ -1,9 +1,9 @@
+# -- Operating System ----------
 # MacOS
 .DS_Store
 
-# Node
-node_modules
 
+# -- Languages -----------------
 # C++
 *.dSYM
 include
@@ -11,28 +11,42 @@ include
 # C++ (me)
 Go
 
+# -- Environments --------------
+# Node
+node_modules
+
 # Splashkit
 Resources
 
 
-# Files
+# -- Files ---------------------
 *.pdf
 *.doc*
 *.zip
 
+*.swp
+
+
+
+# -- Editor ----------------------
+.vscode
+
+
+# -- Logging -------------------
+logs
+
+
+# -- Security ------------------
+.env*
+.aliases.private*
+
+
+
+
+# -- Custom --------------------
 # Screenshots
 _screenshots
 screenshots
 
-# Editor
-.vscode
 
-# Logs
-logs
-
-# Security
-.env*
-.aliases.private*
-
-# DEV
-a.js
+# Other
