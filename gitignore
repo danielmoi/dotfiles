@@ -20,11 +20,20 @@ Resources
 
 
 # -- Files ---------------------
+# Documents
 *.pdf
 *.doc*
+
+# Compressed files
 *.zip
 
+# Temporary files
 *.swp
+
+# Images
+*.png
+*.jpg
+*.gif
 
 
 
