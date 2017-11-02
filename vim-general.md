@@ -64,6 +64,12 @@ I         First character of line, and enter insert mode
 $         End of line
 A         End of line, and enter insert mode (Append text at end of line)
 
+SHIFT+8   Search forward
+SHIFT+3   Search backward
+
+n         Next, forward
+N         Next, backward
+
 -----------------------------------------------------------------------
 ## Modes
 Normal Mode         the characters you type are commands
