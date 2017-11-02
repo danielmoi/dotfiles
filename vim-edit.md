@@ -65,6 +65,9 @@ dd = cut current line, including the newline character at the end of the line [1
 x = Delete, a throwback to typewriters and having to over-write an 'x' to "delete"
 r           Replace single character (returns back to Normal mode)
 
+dt(   delete to (but not including) the first "(" character [171103]
+df(   delete to (and including) the first "(" character
+
 # Paste
 p     paste below (the "default" behaviour is next line / below)
 P     paste above
