@@ -146,7 +146,7 @@ nnoremap  Non-recursive mapping in Normal mode
 ## Replace (Change inner word)
 [170915]
 ciw     change inner word = removes current word, and enters Insert mode
-ct,     change inner word to the first instance of ","
+ct,     change inner word to the first instance of "," [171108]
 
 
 ## Change case
