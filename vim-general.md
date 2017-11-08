@@ -48,6 +48,8 @@ CTRL-F    Forward 1 page
 CTRL-B    Back 1 page
 zz        Scroll the current cursor position to the middle of the page
 z<CR>     Scroll the current cursor to the top
+CTRL+E    Scroll down 1 line
+CTRL+Y    Scroll up 1 line
 
 gg        Go to top of page
 G         Go to bottom of page
