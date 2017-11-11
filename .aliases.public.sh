@@ -62,3 +62,7 @@ alias yl="yarn lint"
 alias yg="yarn go"
 alias ya="yarn assets"
 alias yj="yarn test:jestcoverage"
+
+# DATES
+alias week="date +%V" # 171109
+alias day="date +%j" # 171111
