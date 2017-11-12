@@ -16,6 +16,13 @@ It's written as a proper noun
           The lint errors window for Syntastic is a location list
           The location list is a window-local variant of the Quickfix List
 
+
+-----------------------------------------------------------------------
+## File Explorer
+:Explore  This is the built-in file explorer! [171112]
+
+We can also install a plugin, such as NERDTree
+
 -----------------------------------------------------------------------
 ## Terms
 Buffer    An in-memory representation of a document

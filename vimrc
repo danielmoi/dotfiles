@@ -256,3 +256,4 @@ set wildignore+=**/node_modules,**/coverage
 nmap <Leader>l :set list!<CR> " Toggle showing invisible characters
 
 nnoremap <Leader>hl :set hlsearch!<CR>
+
