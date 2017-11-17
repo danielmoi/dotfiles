@@ -6,10 +6,10 @@
 - [ls](\term-ls.md)
 
 ## Config Files
-- [bash_profile](\.bash_profile)
-- [gitignore](\gitignore)`
-- [vimrc](\vimrc)
-- [zshrc](\zshrc)
+- [bash_profile](.bash_profile)
+- [gitignore](gitignore)
+- [vimrc](vimrc)
+- [zshrc](zshrc)
 
 ## To do
 - [ ] `.eslintrc`
