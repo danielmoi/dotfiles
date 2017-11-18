@@ -42,7 +42,9 @@ $     The process ID of the shell
 
 ### Shell variables - set by the sehll
 HISTCMD   Number in the history list of the current command
+
 PWD       The current working directory as set by the cd command
+
 RANDOM    Each time this parameter is referenced, a random integer
           between 0 and 32767 is generated
 
@@ -109,22 +111,29 @@ SHELL     The full pathname to the shell
 ## Readline
 ### Commands for Moving
 C-f   CTRL-f  forward-char      Forward a character
+
 C-b   CTRL-b  backward-char     Back a character
 
 M-f   OPT-f   forward-word      Forward a word
+
 M-b   OPT-b   back-word         Back a word
 
 C-e   CTRL-e  end-of-line       End of line
+
 C-a   CTRL-a  beginning-of-line Start of line
 
 ### Commands for Manipulating the History
 Return        accept-line       Accept the line, regardless of cursor position
+
 C-p   CTRL-p  previous-history  Previous command
+
 C-n   CTRL-n  bext-history      Next command
+
 C-r   CTRL-r  reverse-search-history
 
 ### Commands for Killing and Yanking
 C-k   CTRL-k  kill-line         Kill text from cursor to end of line
+
 C-u   CTRL-u  backward-kill-line  Kill text from cursor to start of line.
                                   Killed text is saved on the kill-ring
 C-y   CTRL-y  yank                Yank the top of the kill-ring into buffer
@@ -196,7 +205,9 @@ pwd           Print working directoy
 ---
 ## Other
 bash            Change to Bash
+
 bash --login    Change to bash
                 Make bash act as if it had been invoked as a LOGIN SHELL
+
 zsh             Change to ZSH
 
