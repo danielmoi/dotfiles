@@ -19,5 +19,9 @@ Best to move common ENV vars out and source those from both `.bash_profile` and
 
 
 ## Scripts
-If your scripts start with the line #!/bin/bash they will still be run using
-bash, even if your default shell is zsh.
+The syntax of zsh is similar to bash.
+
+The shell that runs the scripts is the one indicated in the first line, the
+shebang line. For example, if the script starts with #!/bin/bash,
+it will be executed by bash (even if your default shell is zsh).
+[source](https://unix.stackexchange.com/questions/38172/switching-to-zsh-are-all-bash-scripts-compatible-with-zs://unix.stackexchange.com/questions/38172/switching-to-zsh-are-all-bash-scripts-compatible-with-zsh)
