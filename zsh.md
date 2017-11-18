@@ -25,3 +25,4 @@ The shell that runs the scripts is the one indicated in the first line, the
 shebang line. For example, if the script starts with #!/bin/bash,
 it will be executed by bash (even if your default shell is zsh).
 [source](https://unix.stackexchange.com/questions/38172/switching-to-zsh-are-all-bash-scripts-compatible-with-zs://unix.stackexchange.com/questions/38172/switching-to-zsh-are-all-bash-scripts-compatible-with-zsh)
+[source](http://slopjong.de/2012/07/02/compatibility-between-zsh-and-bash/)
