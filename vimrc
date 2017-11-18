@@ -22,6 +22,7 @@ Plug 'itchyny/lightline.vim' " 170825 Status line
 " 1. Language
 Plug 'scrooloose/syntastic' " 170906 Syntax checking
 Plug 'rust-lang/rust.vim' " 171022 Rust
+Plug 'scrooloose/nerdcommenter' " 171119 Comments
 
 " 2. Completion
 Plug 'tpope/vim-surround' " 170826 Change parens, brackets, etc
@@ -190,6 +191,12 @@ let g:indent_guides_enable_on_vim_startup = 0 " Can toggle with <Leader>ig
 " autocmd VimEnter,Colorscheme * :IndentGuidesEnable
 
 "------------------------------------------------------------------------------
+" === NERDCommenter ==================================
+" Add spaces after comment delimiters by default 171119
+let g:NERDSpaceDelims = 1
+
+" Map toggle 171119
+map <Leader>/ <Plug>NERDCommenterToggle
 
 " ===============================================
 " My Mappings
