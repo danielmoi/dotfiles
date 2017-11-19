@@ -262,5 +262,6 @@ set wildignore+=**/node_modules,**/coverage
 " /=== INVISIBLE CHARACTERS ---------------------------------------
 nmap <Leader>l :set list!<CR> " Toggle showing invisible characters
 
-nnoremap <Leader>hl :set hlsearch!<CR>
+" Clear search highlighting on pressing ESC
+nnoremap <ESC> :nohlsearch<CR><ESC>
 
