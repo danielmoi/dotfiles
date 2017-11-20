@@ -2,6 +2,8 @@
 # MacOS
 .DS_Store
 
+# -- Terminal ----------
+.bash_history
 
 # -- Languages -----------------
 # C++
