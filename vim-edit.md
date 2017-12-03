@@ -156,6 +156,7 @@ U   Uppercase
 u   Lowercase
 
 Visual select, then ~/U/u
+viw~  Toggle case of current word
 
 gUU   Change current line to uppercase
 guu   Change current line to lowercase
