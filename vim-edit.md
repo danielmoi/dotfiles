@@ -167,3 +167,9 @@ Toggle case of...
 g~3w  next three words
 g~iw  current word (cursor can be anywhere in word)
 g~$   all characters, from cursor, to end to line
+
+
+# Shell out
+:!    The next commands will be executed in the shell (terminal)
+      :! mkdir hello
+      # creates a directory called hello
