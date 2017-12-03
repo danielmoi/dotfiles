@@ -1,6 +1,6 @@
 ## Link
 ```
-ln -flags source target
+ln -flags <source> <target>
 ```
 
 Example:

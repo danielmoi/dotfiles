@@ -92,7 +92,9 @@ autocmd bufreadpre *.sh setlocal textwidth=0
 
 set colorcolumn=+1 "highlight column after 'textwidth' [170930]
 
-let b:delimitMate_nesting_quotes = ['`']
+" Autocomplete triple quotes (fenced code blocks / python comments)
+" Use global variable instead of b: [171130]
+let delimitMate_nesting_quotes = ['`', '"']
 
 
 " 4. Integrations

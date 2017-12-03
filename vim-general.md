@@ -133,6 +133,7 @@ We inspect variables with :echo
 :let {var}={value}    Create internal variable
 :unlet {var}          Remove internal variable
 
+Prefixes
 g: global-variable    global
 b: buffer-variable    local to the current buffer
 w: window-variable    local to the current window
