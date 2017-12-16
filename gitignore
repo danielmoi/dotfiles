@@ -31,9 +31,9 @@ node_modules
 *.swp
 
 # Images
-*.png
-*.jpg
-*.gif
+# *.png
+# *.jpg
+# *.gif
 
 
 
@@ -54,8 +54,8 @@ logs
 
 # -- Custom --------------------
 # Screenshots
-_screenshots
-screenshots
+# _screenshots
+# screenshots
 
 
 # Other

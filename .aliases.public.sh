@@ -14,7 +14,9 @@ alias up="docker-compose up"
 # FILES - COPY
 # 170820 copy file interactive
 alias cp="cp -i"
-alias cpgitignore="cp ~/.gitignore .gitignore" # this is a symlink
+
+# 171217 No longer using a root .gitignore
+alias cpgitignore="cp ~/.dotfiles/.gitignore .gitignore"
 
 # 170820 move file interactive
 alias mv="mv -i"
