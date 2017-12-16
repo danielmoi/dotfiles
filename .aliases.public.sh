@@ -16,7 +16,7 @@ alias up="docker-compose up"
 alias cp="cp -i"
 
 # 171217 No longer using a root .gitignore
-alias cpgitignore="cp ~/.dotfiles/.gitignore .gitignore"
+alias cpgitignore="cp ~/.dotfiles/gitignore .gitignore"
 
 # 170820 move file interactive
 alias mv="mv -i"
