@@ -16,17 +16,17 @@ alias up="docker-compose up"
 alias cp="cp -i"
 
 # 171217 No longer using a root .gitignore
-alias cpgitignore="cp ~/.dotfiles/gitignore .gitignore"
+alias cpgitignore="cp ~/dotfiles/gitignore .gitignore"
 
 # 170820 move file interactive
 alias mv="mv -i"
 
 # FILES - EDIT
-alias vimrc="vim ~/.dotfiles/vimrc"
-alias bashp="vim ~/.dotfiles/.bash_profile"
-alias zshrc="vim ~/.dotfiles/zshrc"
-alias bashrc="vim ~/.dotfiles/.bashrc"
-alias aliases="vim ~/.dotfiles/.aliases.public.sh"
+alias vimrc="vim ~/dotfiles/vimrc"
+alias bashp="vim ~/dotfiles/.bash_profile"
+alias zshrc="vim ~/dotfiles/zshrc"
+alias bashrc="vim ~/dotfiles/.bashrc"
+alias aliases="vim ~/dotfiles/.aliases.public.sh"
 
 # FILES/FOLDERS - VIEW
 # 170819
@@ -34,7 +34,7 @@ alias lsl="ls -la | less"
 alias lsa="ls -la"
 
 # FILES/FOLDERS - NAVIGATE
-alias dotfiles="cd ~/.dotfiles"
+alias dotfiles="cd ~/dotfiles"
 
 # GIT
 # 161126

@@ -192,6 +192,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 " -----------------------------------------------
 " Don't search these directories
 set wildignore+=**/node_modules,**/coverage
+set wildignore+=*.zip
 
 " Search and replace [170918]
 :nnoremap <Leader>s :%s /\<<C-r><C-w>\>//g<Left><Left>
