@@ -1,9 +1,5 @@
 # My dotfiles
 
-## Terminal Tips
-- [curl](\term-curl.md)
-- [ln](\term-ln.md)
-- [ls](\term-ls.md)
 
 ## Config Files
 - [bash_profile](.bash_profile)
