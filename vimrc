@@ -223,9 +223,9 @@ set wildignore+=*.zip
 " -----------------------------------------------
 " NERDTree - toggle
 map <C-n> :NERDTreeToggle<Enter>
-noremap <Leader>n :NERDTreeToggle<Enter>
 
 " NERDTree - focus
+noremap <Leader>n :NERDTreeFind<Enter>
 noremap <Leader>f :NERDTreeFind<Enter>
 
 " NERDTree - show hidden files
