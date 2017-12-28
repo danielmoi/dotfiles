@@ -8,7 +8,7 @@ BULLETTRAIN_PROMPT_ORDER=(
 
 BULLETTRAIN_CUSTOM_MSG="🚀 "
 BULLETTRAIN_CUSTOM_BG="white"
-BULLETTRAIN_PROMPT_CHAR="@"
+BULLETTRAIN_PROMPT_CHAR="$"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/danielmoi/.oh-my-zsh
