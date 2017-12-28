@@ -115,7 +115,7 @@ source ~/.aliases.private.home.sh
 
 # CONFIG
 # 170301
-EDITOR=atom
+EDITOR=vim
 
 # Rust Exercism
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
