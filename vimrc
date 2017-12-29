@@ -39,6 +39,7 @@ Plug 'editorconfig/editorconfig-vim' " Editor config [170925]
 " 6. Commands
 "
 " 7. Other
+Plug '907th/vim-auto-save' " 171230
 
 " SETTINGS and MAPPINGS
 
@@ -291,5 +292,13 @@ let g:NERDSpaceDelims = 1
 
 " Toggle commenting [171119]
 map <Leader>/ <Plug>NERDCommenterToggle
+
+" -----------------------------------------------
+" Vim Auto Save
+" -----------------------------------------------
+let g:auto_save = 1
+let g:auto_save_in_insert_mode = 1
+" Not saving in insert mode though... 171230
+let g:auto_save_events = ["CursorHold", "CursorHoldI", "CompleteDone", "InsertLeave"]
 
 
