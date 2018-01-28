@@ -39,8 +39,6 @@ Plug 'editorconfig/editorconfig-vim' " Editor config [170925]
 " 6. Commands
 "
 " 7. Other
-Plug '907th/vim-auto-save' " 171230
-
 " SETTINGS and MAPPINGS
 
 call plug#end() " initialize plugin system

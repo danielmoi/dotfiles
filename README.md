@@ -2,7 +2,7 @@
 
 
 ## Config Files
-- [bash_profile](.bash_profile)
+- [bash_profile](bash_profile)
 - [gitignore](gitignore)
 - [vimrc](vimrc)
 - [zshrc](zshrc)
