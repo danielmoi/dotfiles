@@ -42,6 +42,7 @@ alias gb="git branch --sort=committerdate"
 alias gc="git commit"
 alias gs="git status"
 alias gcm="git commit -m"
+alias rb="git checkout develop; git pull; git checkout -; git rebase origin/develop"
 
 # TERMINAL
 alias reload=". ~/.zshrc"
