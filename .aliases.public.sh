@@ -21,6 +21,9 @@ alias cpgitignore="cp ~/dotfiles/gitignore .gitignore"
 # 170820 move file interactive
 alias mv="mv -i"
 
+# 180331 remove file interactive
+alias rm="rm -i"
+
 # FILES - EDIT
 alias vimrc="vim ~/dotfiles/vimrc"
 alias bashp="vim ~/dotfiles/bash_profile"
@@ -43,6 +46,10 @@ alias gc="git commit"
 alias gs="git status"
 alias gcm="git commit -m"
 alias rb="git checkout develop; git pull; git checkout -; git rebase origin/develop"
+
+# 180220
+alias hide="git update-index --assume-unchanged"
+alias unhide="git update-index --no-assume-unchanged"
 
 # TERMINAL
 alias reload=". ~/.zshrc"
@@ -69,3 +76,4 @@ alias yj="yarn test:jestcoverage"
 # DATES
 alias week="date +%V" # 171109
 alias day="date +%j" # 171111
+
