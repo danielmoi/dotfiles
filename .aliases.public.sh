@@ -45,7 +45,7 @@ alias gb="git branch --sort=committerdate"
 alias gc="git commit"
 alias gs="git status"
 alias gcm="git commit -m"
-alias rb="git checkout develop; git pull; git checkout -; git rebase origin/develop"
+alias rb="git checkout develop && git pull && git checkout - && git rebase origin/develop"
 
 # 180220
 alias hide="git update-index --assume-unchanged"
@@ -68,6 +68,7 @@ alias yb="yarn build"
 alias ybd="yarn build:dev"
 alias ys="yarn start"
 alias yl="yarn lint"
+alias ysp="yarn spec"
 # 170705
 alias yg="yarn go"
 alias ya="yarn assets"
