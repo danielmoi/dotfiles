@@ -1,3 +1,10 @@
+# 180601 zplug
+# source ~/.zplug/init.zsh
+
+# 180601 spaceship theme
+# zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
+
+# Bullet train theme
 BULLETTRAIN_PROMPT_ORDER=(
   custom
   git
@@ -17,6 +24,7 @@ export ZSH=/Users/danielmoi/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+
 ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -121,4 +129,8 @@ EDITOR=vim
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
+
+# 180425 Command Line Tutorial
+export PATH=$PATH:/Users/danielmoi/blah
+
 

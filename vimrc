@@ -303,9 +303,9 @@ map <Leader>/ <Plug>NERDCommenterToggle
 " -----------------------------------------------
 " Vim Auto Save
 " -----------------------------------------------
-let g:auto_save = 1
-let g:auto_save_in_insert_mode = 1
-" Not saving in insert mode though... 171230
-let g:auto_save_events = ["CursorHold", "CursorHoldI", "CompleteDone", "InsertLeave"]
+" let g:auto_save = 1
+" let g:auto_save_in_insert_mode = 1
+" " Not saving in insert mode though... 171230
+" let g:auto_save_events = ["CursorHold", "CursorHoldI", "CompleteDone", "InsertLeave"]
 
 

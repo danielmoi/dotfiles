@@ -73,6 +73,8 @@ alias ysp="yarn spec"
 alias yg="yarn go"
 alias ya="yarn assets"
 alias yj="yarn test:jestcoverage"
+# 180516
+alias yf="yarn flow check"
 
 # DATES
 alias week="date +%V" # 171109
