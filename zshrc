@@ -116,10 +116,10 @@ export PATH="$PATH:/Users/danielmoi/.splashkit/skm-darwin-x64/skm.app/Contents/M
 
 # Source other files
 # 170819
-source ~/.env.sh
-source ~/.aliases.public.sh
-source ~/.aliases.private.work.sh
-source ~/.aliases.private.home.sh
+source ~/.env.bash
+source ~/.aliases.public.bash
+source ~/.aliases.private.work.bash
+source ~/.aliases.private.home.bash
 
 # CONFIG
 # 170301
