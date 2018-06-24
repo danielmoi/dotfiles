@@ -29,7 +29,7 @@ alias vimrc="vim ~/dotfiles/vimrc"
 alias bashp="vim ~/dotfiles/bash_profile"
 alias zshrc="vim ~/dotfiles/zshrc"
 alias bashrc="vim ~/dotfiles/bashrc"
-alias aliases="vim ~/dotfiles/.aliases.public.sh"
+alias aliases="vim ~/dotfiles/.aliases.public.bash"
 
 # FILES/FOLDERS - VIEW
 # 170819
