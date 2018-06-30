@@ -46,6 +46,8 @@ alias gc="git commit"
 alias gs="git status"
 alias gcm="git commit -m"
 alias rb="git checkout develop && git pull && git checkout - && git rebase origin/develop"
+alias gra="gco develop && git reset --hard origin/develop \
+  && gco master && git reset --hard origin/master"
 
 # 180220
 alias hide="git update-index --assume-unchanged"
