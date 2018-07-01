@@ -2,14 +2,16 @@
 
 
 ## Config Files
-- [bash_profile](bash_profile)
-- [gitignore](gitignore)
-- [vimrc](vimrc)
-- [zshrc](zshrc)
+- [bash_profile](/bash_profile)
+- [zshrc](/zshrc)
+
+- [gitignore](/gitignore)
+- [vimrc](/vimrc)
+- [eslintrc](/eslintrc)
+
+- [vscode](/vscode.json)
 
 ## To do
-- [ ] `.eslintrc`
-- [ ] `.vscode`
 - [ ] `code snippets`
 
 ## Usage
