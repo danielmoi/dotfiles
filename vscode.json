@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "vim.useSystemClipboard": true,
+  "vim.enableNeovim": true,
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+  "javascript.validate.enable": false
+}
