@@ -1,3 +1,4 @@
+# Aliases / Environment variables
 source ~/.env.sh
 source ~/.aliases.public.sh
 source ~/.aliases.private.work.sh
