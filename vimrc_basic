@@ -1,0 +1,12 @@
+" DISPLAY
+set number " show line numbers
+
+" SPACES AND TABS
+set tabstop=2 " set <TAB> to 2 spaces
+set expandtab " tabs are spaces
+
+" MOTION
+" Use display lines, instead of file lines
+nnoremap j gj
+nnoremap k gk
+
