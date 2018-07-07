@@ -88,6 +88,9 @@ set colorcolumn=+1
 " turn off textwidth for .sh filetype [171121]
 autocmd bufreadpre *.sh setlocal textwidth=0
 
+" prevent reseting of expandtab etc when pasting [180707]
+set nopaste
+
 
 
 " -----------------------------------------------
