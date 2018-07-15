@@ -137,4 +137,8 @@ export PATH=$PATH:/Users/danielmoi/blah
 
 # 180714 fzf
 # source ~/.fzf.zsh if it exists
+# auto-generated
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# 180714 kubectl
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
