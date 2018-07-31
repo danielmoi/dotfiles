@@ -1,0 +1,8 @@
+{
+  "eslint.autoFixOnSave": true,
+  "vim.useSystemClipboard": true,
+  "vim.enableNeovim": true,
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+}

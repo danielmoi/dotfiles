@@ -1,0 +1,75 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.tabSize": 2,
+  "editor.tabCompletion": true,
+
+  "editor.fontSize": 12,
+  "editor.wordWrapColumn": 80,
+  "editor.wordWrap": "on",
+  "editor.detectIndentation": true,
+  "editor.stablePeek": true,
+
+  "editor.renderWhitespace": "all",
+  "editor.renderIndentGuides": true,
+  "editor.renderControlCharacters": true,
+  "editor.quickSuggestionsDelay": 1000,
+  "editor.cursorBlinking": "solid",
+
+
+  "editor.selectionHighlight": false,
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+
+  "window.zoomLevel": -1,
+  "window.title": "${activeEditorMedium} –– 👻 –– ${rootName}",
+
+  "emmet.syntaxProfiles": {
+    "javascript": ["jsx", "md", "html"],
+    "html": "html"
+  },
+
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.css": "postcss",
+    "*.jsx": "javascriptreact",
+    "vimrc": "viml"
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true
+  },
+
+  "code-runner.clearPreviousOutput": true,
+  "editor.formatOnPaste": false,
+  "editor.snippetSuggestions": "top",
+
+  "editor.parameterHints": false,
+  "editor.minimap.enabled": false,
+  "vsicons.associations.files": [
+    { "icon": "reactjs",  "extensions": ["jsx"], "format": "svg" }
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "extensions.ignoreRecommendations": false,
+
+  "vim.useSystemClipboard": true,
+  "vim.statusBarColorControl": true,
+  "gitlens.keymap": "alternate",
+  "vsicons.dontShowNewVersionMessage": true,
+  "gitlens.historyExplorer.enabled": true,
+  "rewrap.autoWrap.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.autoFixOnSave": true
+}
