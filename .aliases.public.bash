@@ -2,6 +2,7 @@
 # 170505
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
+alias ij="/Applications/IntelliJ IDEA CE.app/Contents/MacOS/idea"
 
 # 170820
 alias vim="nvim"
@@ -48,6 +49,7 @@ alias gcm="git commit -m"
 alias rb="git checkout develop && git pull && git checkout - && git rebase origin/develop"
 alias gra="gco develop && git reset --hard origin/develop \
   && gco master && git reset --hard origin/master"
+alias devpull="git checkout develop && git pull -r"
 
 # 180220
 alias hide="git update-index --assume-unchanged"
