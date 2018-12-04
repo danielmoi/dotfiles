@@ -1,9 +1,3 @@
-# 180601 zplug
-# source ~/.zplug/init.zsh
-
-# 180601 spaceship theme
-# zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
-
 # Bullet train theme
 BULLETTRAIN_PROMPT_ORDER=(
   custom
@@ -18,14 +12,17 @@ BULLETTRAIN_CUSTOM_BG="white"
 BULLETTRAIN_PROMPT_CHAR="$"
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/danielmoi/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-ZSH_THEME="bullet-train"
+# ZSH_THEME="bullet-train"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+# ZSH_THEME="dracula"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -112,14 +109,12 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-export PATH="$PATH:/Users/danielmoi/.splashkit/skm-darwin-x64/skm.app/Contents/MacOS:/Users/danielmoi/.rvm/gems/ruby-2.3.0/bin:/Users/danielmoi/.rvm/gems/ruby-2.3.0@global/bin:/Users/danielmoi/.rvm/rubies/ruby-2.3.0/bin:/Users/danielmoi/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/danielmoi/.rvm/bin"
-
 # Source other files
 # 170819
-source ~/.env.bash
+# source ~/.env.bash
 source ~/.aliases.public.bash
-source ~/.aliases.private.work.bash
-source ~/.aliases.private.home.bash
+source ~/.aliases.private
+# source ~/.aliases.private.home.bash
 
 # CONFIG
 # 170301
@@ -142,3 +137,7 @@ export PATH=$PATH:/Users/danielmoi/blah
 
 # 180714 kubectl
 if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
