@@ -1,4 +1,3 @@
-" execute pathogen#infect()
 call plug#begin('~/.vim/plugged')
 
 " INSTRUCTIONS
@@ -31,6 +30,7 @@ Plug 'raimondi/delimitmate' " 170826 Auto-close parens
 " 3. Code display
 Plug 'flazz/vim-colorschemes' " Color schemes [170924]
 Plug 'editorconfig/editorconfig-vim' " Editor config [170925]
+Plug 'dracula/vim', { 'as': 'dracula' } " [180820]
 
 " 4. Integrations
 "
@@ -97,14 +97,18 @@ set nopaste
 " COLORS
 " -----------------------------------------------
 " Use colors that will look good on a dark background
-set background=dark
+" Not when using Dracula theme
+" set background=dark
 
 " Turn on syntax highlighting
 syntax enable
 
 " Use solarized colorscheme
 " with background=dark, becomes "solarized-dark"
-colorscheme solarized
+" colorscheme solarized
+
+" Disable the background light gray highlighting
+au ColorScheme * hi Normal ctermbg=None
 
 " -----------------------------------------------
 " DISPLAY
