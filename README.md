@@ -21,6 +21,7 @@ ln -si ~/dotfiles/bash_profile ~/.bash_profile
 ln -si ~/dotfiles/zshrc ~/.zshrc
 ln -si ~/dotfiles/vimrc ~/.vimrc
 ln -si ~/dotfiles/eslintrc ~/.eslintrc
+ln -si ~/dotfiles/.aliases.public.bash ~/.aliases.public.bash
 ```
 
 
