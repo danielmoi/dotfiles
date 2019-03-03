@@ -5,7 +5,7 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 alias ij="/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea"
 
 # 170820
-alias vim="nvim"
+# alias vim="nvim"
 
 
 

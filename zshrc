@@ -118,7 +118,7 @@ source ~/.aliases.private
 
 # CONFIG
 # 170301
-EDITOR=vim
+EDITOR=nvim
 
 # Rust Exercism
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
@@ -141,3 +141,13 @@ if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+prod() {
+  SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-prod} | sed -n 2p | awk '{ print $1 }') 
+  kubectl exec -it $SERVER -n${2:-prod} bash
+}
+
+testing() {
+  SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-testing} | sed -n 2p | awk '{ print $1 }') 
+  kubectl exec -it $SERVER -n${2:-testing} bash
+}
