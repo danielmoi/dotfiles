@@ -11,6 +11,7 @@ alias ij="/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea"
 
 # DOCKER
 alias up="docker-compose up"
+alias dc="docker-compose"
 
 # FILES - COPY
 # 170820 copy file interactive
