@@ -1,8 +1,16 @@
 {
-  "eslint.autoFixOnSave": true,
-  "vim.useSystemClipboard": true,
+  "flow.enabled": false,
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": true,
   "vim.enableNeovim": true,
-  "[handlebars]": {
-    "editor.formatOnSave": false
-  },
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ],
+  "editor.parameterHints.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

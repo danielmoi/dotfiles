@@ -71,5 +71,7 @@
   "gitlens.historyExplorer.enabled": true,
   "rewrap.autoWrap.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "eslint.autoFixOnSave": true
+  "editor.gotoLocation.multiple": "goto",
+  "eslint.autoFixOnSave": true,
+  "vim.neovimPath": "/usr/local/bin/nvim"
 }
