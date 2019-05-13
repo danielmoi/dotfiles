@@ -132,7 +132,6 @@ fi
 export PATH=$PATH:/Users/danielmoi/blah
 
 
-
 # 180714 fzf
 # source ~/.fzf.zsh if it exists
 # auto-generated
