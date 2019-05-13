@@ -27,11 +27,11 @@ alias mv="mv -i"
 alias rm="rm -i"
 
 # FILES - EDIT
-alias vimrc="vim ~/dotfiles/vimrc"
-alias bashp="vim ~/dotfiles/bash_profile"
-alias zshrc="vim ~/dotfiles/zshrc"
-alias bashrc="vim ~/dotfiles/bashrc"
-alias aliases="vim ~/dotfiles/.aliases.public.bash"
+alias vimrc="nvim ~/dotfiles/vimrc"
+alias bashp="nvim ~/dotfiles/bash_profile"
+alias zshrc="nvim ~/dotfiles/zshrc"
+alias bashrc="nvim ~/dotfiles/bashrc"
+alias aliases="nvim ~/dotfiles/.aliases.public.bash"
 
 # FILES/FOLDERS - VIEW
 # 170819
@@ -47,6 +47,7 @@ alias gb="git branch --sort=committerdate"
 alias gc="git commit"
 alias gs="git status"
 alias gcm="git commit -m"
+alias gl="git log --oneline"
 alias rb="git checkout develop && git pull && git checkout - && git rebase origin/develop"
 alias gra="gco develop && git reset --hard origin/develop \
   && gco master && git reset --hard origin/master"
@@ -87,4 +88,3 @@ alias yf="yarn flow check"
 # DATES
 alias week="date +%V" # 171109
 alias day="date +%j" # 171111
-

@@ -11,6 +11,9 @@ BULLETTRAIN_CUSTOM_MSG="🚀 "
 BULLETTRAIN_CUSTOM_BG="white"
 BULLETTRAIN_PROMPT_CHAR="$"
 
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_KUBECONTEXT_SHOW=false
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -19,10 +22,10 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
-# ZSH_THEME="bullet-train"
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
-# ZSH_THEME="dracula"
+# ZSH_THEME="bullet-train"
+# ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -143,11 +146,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 prod() {
-  SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-prod} | sed -n 2p | awk '{ print $1 }') 
+  SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-prod} | sed -n 2p | awk '{ print $1 }')
   kubectl exec -it $SERVER -n${2:-prod} bash
 }
 
 testing() {
-  SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-testing} | sed -n 2p | awk '{ print $1 }') 
+  SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-testing} | sed -n 2p | awk '{ print $1 }')
   kubectl exec -it $SERVER -n${2:-testing} bash
 }
