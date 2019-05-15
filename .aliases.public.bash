@@ -52,6 +52,7 @@ alias rb="git checkout develop && git pull && git checkout - && git rebase origi
 alias gra="gco develop && git reset --hard origin/develop \
   && gco master && git reset --hard origin/master"
 alias devpull="git checkout develop && git pull -r"
+alias gx="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit"
 
 # a shorthand for --pretty=oneline --abbrev-commit
 alias gl="git log --oneline"
