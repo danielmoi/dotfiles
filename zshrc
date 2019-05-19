@@ -113,24 +113,18 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # Source other files
-# 170819
-# source ~/.env.bash
-source ~/.aliases.public.bash
-source ~/.aliases.private
-# source ~/.aliases.private.home.bash
+ln -si ~/dotfiles/.aliases.public.sh ~/.aliases.public.sh
+ln -si ~/dotfiles/.aliases.private.sh ~/.aliases.private.sh
+source ~/.aliases.public.sh
+source ~/.aliases.private.sh
 
 # CONFIG
-# 170301
 EDITOR=nvim
 
 # Rust Exercism
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
   . ~/.config/exercism/exercism_completion.zsh
 fi
-
-# 180425 Command Line Tutorial
-export PATH=$PATH:/Users/danielmoi/blah
-
 
 # 180714 fzf
 # source ~/.fzf.zsh if it exists
