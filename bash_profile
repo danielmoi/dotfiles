@@ -31,3 +31,5 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+
+export PATH="$HOME/.cargo/bin:$PATH"

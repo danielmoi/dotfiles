@@ -113,8 +113,11 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # Source other files
-ln -si ~/dotfiles/.aliases.public.sh ~/.aliases.public.sh
-ln -si ~/dotfiles/.aliases.private.sh ~/.aliases.private.sh
+ln -sf ~/dotfiles/.aliases.public.sh ~/.aliases.public.sh
+ln -sf ~/dotfiles/.aliases.private.sh ~/.aliases.private.sh
+ln -sf ~/dotfiles/zshrc ~/.zshrc
+ln -sf ~/dotfiles/nvim_init ~/.config/nvim/init.vim
+ln -sf ~/dotfiles/vimrc ~/.vimrc
 source ~/.aliases.public.sh
 source ~/.aliases.private.sh
 
@@ -147,3 +150,5 @@ testing() {
   SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-testing} | sed -n 2p | awk '{ print $1 }')
   kubectl exec -it $SERVER -n${2:-testing} bash
 }
+
+export PATH="$HOME/.cargo/bin:$PATH"
