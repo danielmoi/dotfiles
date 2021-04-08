@@ -135,20 +135,24 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # 180714 kubectl
-if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+# if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# prod() {
+#   SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-prod} | sed -n 2p | awk '{ print $1 }')
+#   kubectl exec -it $SERVER -n${2:-prod} bash
+# }
 
-prod() {
-  SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-prod} | sed -n 2p | awk '{ print $1 }')
-  kubectl exec -it $SERVER -n${2:-prod} bash
-}
-
-testing() {
-  SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-testing} | sed -n 2p | awk '{ print $1 }')
-  kubectl exec -it $SERVER -n${2:-testing} bash
-}
+# testing() {
+#   SERVER=$(kubectl get pods -l app=${1:-jobs-api} -n ${2:-testing} | sed -n 2p | awk '{ print $1 }')
+#   kubectl exec -it $SERVER -n${2:-testing} bash
+# }
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/flutter/bin"
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
+
+# if command `pyenv` exists, init it
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

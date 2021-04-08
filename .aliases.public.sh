@@ -4,11 +4,11 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 alias ij="/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea"
 
 # DOCKER
-alias up="docker-compose up"
-alias dc="docker-compose"
-alias ds="docker stats $(docker ps --format={{.Names}})"
-alias upapp="docker-compose up app"
-alias killapp="docker-compose kill app"
+# alias up="docker-compose up"
+# alias dc="docker-compose"
+# alias ds="docker stats $(docker ps --format={{.Names}})"
+# alias upapp="docker-compose up app"
+# alias killapp="docker-compose kill app"
 
 # FILES - COPY
 alias cp="cp -i"
@@ -57,3 +57,9 @@ alias yl="yarn lint"
 # DATES
 alias week="date +%V" # 171109
 alias day="date +%j" # 171111
+
+# GATSBY
+gd="gatsby develop"
+
+# LOL
+alias busy="genact -m memdump"

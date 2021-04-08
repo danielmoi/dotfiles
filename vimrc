@@ -80,7 +80,7 @@ set shiftwidth=2
 
 " Limit screen width to 80 characters [170930]
 " Will actually create new line automaticaly (adds EOL)
-set textwidth=80
+" set textwidth=80
 
 " Highlight the column after 'textwidth' [170930]
 set colorcolumn=+1
@@ -153,8 +153,8 @@ map <C-l> <C-W>l
 " -----------------------------------------------
 
 " Up and down using display lines, instead of file lines [180121]
-nnoremap j gj
-nnoremap k gk
+noremap <silent> j gj
+noremap <silent> k gk
 
 
 " -----------------------------------------------
