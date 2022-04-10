@@ -30,6 +30,9 @@ alias lsa="ls -la"
 # FILES/FOLDERS - NAVIGATE
 alias dotfiles="cd ~/dotfiles"
 
+# SEARCH
+alias rgf="rg --files | rg"
+
 # GIT
 alias gb="git branch --sort=committerdate"
 alias gc="git commit"

@@ -1,18 +1,16 @@
 # Bullet train theme
-BULLETTRAIN_PROMPT_ORDER=(
-  custom
-  git
-  context
-  dir
-  time
-)
+# BULLETTRAIN_PROMPT_ORDER=(
+#   custom
+#   git
+#   context
+#   dir
+#   time
+# )
 
-BULLETTRAIN_CUSTOM_MSG="🚀 "
-BULLETTRAIN_CUSTOM_BG="white"
-BULLETTRAIN_PROMPT_CHAR="$"
+# BULLETTRAIN_CUSTOM_MSG="🚀 "
+# BULLETTRAIN_CUSTOM_BG="white"
+# BULLETTRAIN_PROMPT_CHAR="$"
 
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_KUBECONTEXT_SHOW=false
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -23,9 +21,18 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 
 # ZSH_THEME="robbyrussell"
+
 # ZSH_THEME="bullet-train"
+
 # ZSH_THEME="agnoster"
+
+# ZSH_THEME="powerlevel10k/powerlevel10k"
+# https://github.com/romkatv/powerlevel10k
+
+# https://github.com/denysdovhan/spaceship-prompt
 ZSH_THEME="spaceship"
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_KUBECONTEXT_SHOW=false
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -156,3 +163,11 @@ alias pip=/usr/local/bin/pip3
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/danielmoi/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/danielmoi/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/danielmoi/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/danielmoi/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
