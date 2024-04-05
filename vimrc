@@ -156,6 +156,8 @@ map <C-l> <C-W>l
 noremap <silent> j gj
 noremap <silent> k gk
 
+" Keep same column position when moving, including blank lines! [220831]
+set virtualedit=all
 
 " -----------------------------------------------
 " EDITING

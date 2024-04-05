@@ -57,6 +57,9 @@ alias yb="yarn build"
 alias ys="yarn start"
 alias yl="yarn lint"
 
+# NPM
+alias ns="npm start"
+
 # DATES
 alias week="date +%V" # 171109
 alias day="date +%j" # 171111

@@ -167,7 +167,15 @@ fi
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/danielmoi/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/danielmoi/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/danielmoi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/danielmoi/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/danielmoi/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/danielmoi/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/danielmoi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/danielmoi/google-cloud-sdk/completion.zsh.inc'; fi
+
+# pnpm
+export PNPM_HOME="/Users/danielmoi/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
