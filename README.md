@@ -23,6 +23,8 @@ ln -si ~/dotfiles/vimrc ~/.vimrc
 ln -si ~/dotfiles/eslintrc ~/.eslintrc
 ln -si ~/dotfiles/.aliases.public.sh ~/.aliases.public.sh
 ln -si ~/dotfiles/.aliases.private.sh ~/.aliases.private.sh
+mkdir ~/.config/nvim/
+ln -si ~/dotfiles/nvim_init ~/.config/nvim/init.vim
 ```
 
 

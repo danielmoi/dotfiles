@@ -30,9 +30,9 @@ export ZSH=$HOME/.oh-my-zsh
 # https://github.com/romkatv/powerlevel10k
 
 # https://github.com/denysdovhan/spaceship-prompt
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
+source "/opt/homebrew/opt/spaceship/spaceship.zsh"
 SPACESHIP_TIME_SHOW=true
-SPACESHIP_KUBECONTEXT_SHOW=false
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -179,3 +179,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+source /opt/homebrew/opt/spaceship/spaceship.zsh
