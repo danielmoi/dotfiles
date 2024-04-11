@@ -6,6 +6,7 @@
 - Mousepad to natural scrolling
 - Clean up dock
 - Make font size smaller
+- Trackpad, turn off force click
 
 ## Applications
 - Chrome
@@ -20,7 +21,10 @@
 - Rocket for emojis
 - AppCleaner
 
-## Programs
+## Applications Optional
+- Sonos
+
+## Binaries
 - Command line tools for Xcode
 - Brew
   - install with https://brew.sh/
@@ -43,3 +47,7 @@
 
 - iTerm > Meslo LG M for Powerline
 
+
+## Other binaries
+- https://github.com/sts10/rust-command-line-utilities?tab=readme-ov-file
+- ripgrep
