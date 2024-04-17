@@ -7,6 +7,7 @@
 - Clean up dock
 - Make font size smaller
 - Trackpad, turn off force click
+- Update Font sizes in Open/Save Dialog Boxes (use XCode and edit .plist)
 
 ## Applications
 - Chrome
@@ -23,6 +24,8 @@
 
 ## Applications Optional
 - Sonos
+- Slack
+-
 
 ## Binaries
 - Command line tools for Xcode
@@ -51,3 +54,4 @@
 ## Other binaries
 - https://github.com/sts10/rust-command-line-utilities?tab=readme-ov-file
 - ripgrep
+- tokei
