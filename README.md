@@ -38,3 +38,8 @@ ln -si ~/dotfiles/nvim_init ~/.config/nvim/init.vim
 - https://github.com/alrra/dotfiles/
 - https://github.com/paulmillr/dotfiles
 - https://github.com/gf3/dotfiles
+
+### Programs installed
+------  tokei
+250105  clx
+

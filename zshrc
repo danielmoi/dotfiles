@@ -159,18 +159,14 @@ export PATH="$PATH:$HOME/flutter/bin"
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 
+export PATH="$PATH:/opt/homebrew/bin/pandoc"
+
 # if command `pyenv` exists, init it
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/danielmoi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/danielmoi/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/danielmoi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/danielmoi/google-cloud-sdk/completion.zsh.inc'; fi
 
 # pnpm
 export PNPM_HOME="/Users/danielmoi/Library/pnpm"
@@ -180,3 +176,12 @@ case ":$PATH:" in
 esac
 # pnpm end
 source /opt/homebrew/opt/spaceship/spaceship.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/danielmoi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/danielmoi/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/danielmoi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/danielmoi/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Ensure uv tool binaries (~/.local/bin) are in PATH
+export PATH="$HOME/.local/bin:$PATH"

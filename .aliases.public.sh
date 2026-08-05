@@ -59,6 +59,9 @@ alias yl="yarn lint"
 
 # NPM
 alias ns="npm start"
+alias dev="npm run dev"
+alias magic="npm run magic"
+alias deploy="npm run deploy"
 
 # DATES
 alias week="date +%V" # 171109
@@ -69,3 +72,14 @@ gd="gatsby develop"
 
 # LOL
 alias busy="genact -m memdump"
+
+## Utility
+alias ip="ifconfig | grep \"inet \" | grep -v 127.0.0.1 | cut -d\  -f2"
+alias serve="python3 -m http.server"
+alias programs="cat /Users/danielmoi/dotfiles/programs.md"
+alias tools="cat /Users/danielmoi/dotfiles/webtools.md"
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+  # https://status.zoom.us/incidents/pw9r9vnq5rvk
+
+## AI
+alias cl="code ~/.claude/CLAUDE.md"
