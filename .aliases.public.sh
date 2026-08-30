@@ -1,6 +1,5 @@
 # APPS
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 alias ij="/Applications/IntelliJ\ IDEA\ CE.app/Contents/MacOS/idea"
 
 # DOCKER
