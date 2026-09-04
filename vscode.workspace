@@ -1,24 +1,2 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "files.watcherExclude": {
-    "**/node_modules/**": true,
-    "**/dist/**": true,
-    "**/.netlify/**": true,
-    "**/.nitro/**": true,
-    "**/.tanstack/**": true,
-    "**/graphify-out/**": true,
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-  },
-  "search.exclude": {
-    "**/dist": true,
-    "**/.netlify": true,
-    "**/.nitro": true,
-    "**/.tanstack": true,
-    "**/graphify-out": true,
-  },
-  "flow.enabled": false,
-  "vim.enableNeovim": true,
-  "editor.parameterHints.enabled": false,
 }

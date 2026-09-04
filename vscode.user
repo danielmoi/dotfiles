@@ -1,54 +1,57 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.tabSize": 2,
-  "editor.tabCompletion": true,
-
+  "editor.tabCompletion": "onlySnippets",
   "editor.fontSize": 12,
-  "editor.wordWrapColumn": 80,
-  "editor.wordWrap": "on",
-  "editor.detectIndentation": true,
+  "editor.wordWrapColumn": 100,
+  "editor.wordWrap": "bounded",
+  "editor.detectIndentation": false,
   "editor.stablePeek": true,
-
   "editor.renderWhitespace": "all",
-  "editor.renderIndentGuides": true,
   "editor.renderControlCharacters": true,
   "editor.quickSuggestionsDelay": 1000,
   "editor.cursorBlinking": "solid",
-
-
   "editor.selectionHighlight": false,
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
-
-  "window.zoomLevel": -1,
+  "editor.parameterHints.enabled": false,
+  "flow.enabled": false,
   "window.title": "${activeEditorMedium} –– 👻 –– ${rootName}",
-
   "emmet.syntaxProfiles": {
     "javascript": ["jsx", "md", "html"],
-    "html": "html"
+    "html": "html",
   },
-
   "files.trimTrailingWhitespace": true,
   "files.associations": {
-    "*.css": "postcss",
     "*.jsx": "javascriptreact",
-    "vimrc": "viml"
+    "vimrc": "viml",
   },
   "files.exclude": {
+    "**/.DS_Store": true,
     "**/.git": false,
-    "**/.svn": true,
     "**/.hg": true,
-    "**/.DS_Store": true
+    "**/.svn": true,
+    "node_modules": true,
   },
-
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/.netlify/**": true,
+    "**/.nitro/**": true,
+    "**/.tanstack/**": true,
+    "**/graphify-out/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+  },
+  "search.exclude": {
+    "**/dist": true,
+    "**/.netlify": true,
+    "**/.nitro": true,
+    "**/.tanstack": true,
+    "**/graphify-out": true,
+  },
   "code-runner.clearPreviousOutput": true,
-  "editor.formatOnPaste": false,
   "editor.snippetSuggestions": "top",
-
-  "editor.parameterHints": false,
   "editor.minimap.enabled": false,
-  "vsicons.associations.files": [
-    { "icon": "reactjs",  "extensions": ["jsx"], "format": "svg" }
-  ],
   "explorer.confirmDragAndDrop": false,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -57,21 +60,141 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": true,
-    "suppressShowKeyBindingsNotice": true,
-    "suppressUpdateNotice": false,
-    "suppressWelcomeNotice": true
   },
   "extensions.ignoreRecommendations": false,
-
   "vim.useSystemClipboard": true,
   "vim.statusBarColorControl": true,
+  // "vim.handleKeys": {
+  //   "<C-a>": false,
+  //   "<C-f>": false
+  // },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"],
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"],
+    },
+  ],
   "gitlens.keymap": "alternate",
-  "vsicons.dontShowNewVersionMessage": true,
   "gitlens.historyExplorer.enabled": true,
   "rewrap.autoWrap.enabled": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.gotoLocation.multiple": "goto",
-  "eslint.autoFixOnSave": true,
-  "vim.neovimPath": "/usr/local/bin/nvim"
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#5f0000",
+    "statusBar.noFolderBackground": "#5f0000",
+    "statusBar.debuggingBackground": "#5f0000",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+  },
+  "editor.fontFamily": "Menlo, 'Courier New', monospace",
+  "view-in-browser.customBrowser": "chrome",
+  "rust.all_features": true,
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+  },
+  "cSpell.language": "en-GB",
+  "cSpell.userWords": [
+    "comorbidities",
+    "extubation",
+    "Intraop",
+    "lidocaine",
+    "periop",
+    "perioperative",
+    "postop",
+    "preop",
+  ],
+  "gitlens.blame.separateLines": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "window.newWindowDimensions": "inherit",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left",
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "printcode.lineNumbers": "off",
+  "printcode.paperSize": "a3",
+  "printcode.additionalStyleSheet": ".CodeMirror { font-size: 0.8rem; }",
+  "printcode.autoPrint": false,
+  "editor.guides.indentation": true,
+  "vim.vimrc.enable": true,
+  "vim.enableNeovim": true,
+  "vim.neovimUseConfigFile": true,
+  "window.zoomLevel": -0.9,
+  "editor.accessibilitySupport": "off",
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-mac": "/Users/danielmoi/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.kubectl-path-mac": "/Users/danielmoi/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path-mac": "/Users/danielmoi/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "git.confirmSync": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.tools.terminal.autoApprove": {
+    "npm run build": true,
+    "npm run dev": true,
+    "npm install": true,
+    "./node_modules/.bin/tailwindcss": true,
+    "npx": true,
+    "npm i": true,
+    "firebase": true,
+    "npm run lint": true,
+    "npm list": true,
+    "cp": true,
+    "npm run deploy:functions": true,
+    "nslookup": true,
+    "dig": true,
+    "mv": true,
+  },
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnSave": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml",
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "claudeCode.useTerminal": true,
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+  },
+  "explorer.confirmPasteNative": false,
+  "workbench.startupEditor": "none",
+  "docker.extension.enableComposeLanguageServer": false,
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml",
+  ],
+  // "editor.fontFamily": "Meslo, Consolas, Monaco, Courier New, monospace"
 }

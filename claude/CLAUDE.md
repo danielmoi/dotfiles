@@ -15,6 +15,9 @@
 - When a file or component grows to cover several distinct concerns, split it into smaller focused pieces rather than letting it keep growing.
 - Never collapse an error into null or a silent default — surface the cause instead of hiding the failure.
 
+## Visual Design / CSS
+- Mobile-first design
+
 
 ## Tools
 
