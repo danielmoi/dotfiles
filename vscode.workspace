@@ -1,16 +1,24 @@
 {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/.netlify/**": true,
+    "**/.nitro/**": true,
+    "**/.tanstack/**": true,
+    "**/graphify-out/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+  },
+  "search.exclude": {
+    "**/dist": true,
+    "**/.netlify": true,
+    "**/.nitro": true,
+    "**/.tanstack": true,
+    "**/graphify-out": true,
+  },
   "flow.enabled": false,
-  "javascript.validate.enable": false,
-  "typescript.validate.enable": true,
   "vim.enableNeovim": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
-  ],
   "editor.parameterHints.enabled": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always"
 }

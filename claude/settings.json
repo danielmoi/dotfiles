@@ -1,0 +1,61 @@
+{
+  "env": {
+    "EDITOR": "code --wait"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(git mv *)",
+      "Bash(npx supabase *)",
+      "Bash(python3)",
+      "Read(//private/tmp/**)",
+      "Read(//tmp/**)",
+      "Bash(npm install *)",
+      "Bash(supabase db *)",
+      "Bash(npx tsc *)",
+      "Bash(code --list-extensions)",
+      "Bash(docker --version)",
+      "Bash(grep -vE '^\\\\.$|^\\\\.\\\\.$|node_modules')",
+      "Bash(npx tsx *)",
+      "Bash(npm view *)",
+      "Bash(npm search *)",
+      "Bash(graphify query *)",
+      "Bash(npx eslint *)",
+      "Bash(graphify update *)",
+      "Bash(npm run *)",
+      "Bash(npx prettier *)",
+      "WebFetch(domain:www.resusmonitor.com)",
+      "Bash(git checkout *)",
+      "Bash(git merge *)",
+      "Bash(git branch *)",
+      "Bash(git log *)",
+      "Bash(file *.xls)",
+      "Bash(python3 -c \"import pandas; print\\(pandas.__version__\\)\")",
+      "Bash(python3 -c \"import xlrd; print\\('xlrd', xlrd.__version__\\)\")",
+      "Bash(python3 -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
+      "Bash(python3 -)",
+      "Bash(node -e \"const p=require\\('./package.json'\\);console.log\\(JSON.stringify\\({...p.dependencies,...p.devDependencies},null,1\\)\\)\")",
+      "Bash(npx vitest *)",
+      "Bash(git diff *)",
+      "Bash(python3 -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(/usr/local/bin/python3 -c \"import xlrd; print\\('ok', xlrd.__version__\\)\")",
+      "WebFetch(domain:neon.com)",
+      "WebFetch(domain:clerk.com)",
+      "WebSearch"
+    ],
+    "additionalDirectories": [
+      "/Users/danielmoi/Documents/HOMEBASE/Education/Projects/260627 AIMS/queries",
+      "/Users/danielmoi/Documents/HOMEBASE/Technology/journal-gems-2026/supabase/migrations"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/danielmoi/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "stripe@claude-plugins-official": true,
+    "neon-postgres@neon": true
+  },
+  "theme": "dark",
+  "agentPushNotifEnabled": true
+}
